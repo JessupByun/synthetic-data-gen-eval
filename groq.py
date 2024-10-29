@@ -1,7 +1,7 @@
 import groq
 
 # Make as env variable for more security in future
-api_key = "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"
+api_key = ""
 
 # Assuming Groq API has a function for model loading
 model_name = "gpt-neox-20b"
