@@ -1,4 +1,5 @@
 import os
+import pandas as pd
 from dotenv import load_dotenv
 from groq import Groq
 
@@ -27,7 +28,7 @@ I will give you real examples first.
 Context: Leverage your knowledge about health, demographics, and insurance to generate 1000 realistic but diverse samples. 
 Output the data in a csv format where I can directly copy and paste into a csv.
 
-Example data: {sample_data}
+Example data: {data}
 
 The output should be a markdown code snippet formatted in the following schema:
 
@@ -43,9 +44,9 @@ DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples whic
 """
 
 # Function to generate synthetic data using a model and prompt
-def generate_synthetic_data(model_name, sample_data):
+def generate_synthetic_data(model_name, data):
 
-    prompt = prompt_template.format(sample_data = sample_data)
+    prompt = prompt_template.format(data = data)
     
     try:
         # Create a chat completion using the Groq API
@@ -71,13 +72,18 @@ def generate_synthetic_data(model_name, sample_data):
 
 # Main function to run the process
 def main():
-    sample_data = "sample_datasets/insurance.csv"
 
+    # Only keep first n (100) rows of data to feed to model
+    data = "insurance/insurance.csv"
+    limited_data_df = pd.read_csv(data).head(100)
+    data = limited_data_df.to_csv(index=False)
+    print(data)
+    
     for model_name in model_names:
         print(f"Generating data with {model_name}...")
         
         # Generate synthetic data with n rows!
-        data = generate_synthetic_data(model_name, sample_data)
+        data = generate_synthetic_data(model_name, data)
 
         print(f"Generated Data for {model_name}:\n{data}\n")
 
