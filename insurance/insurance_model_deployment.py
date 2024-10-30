@@ -25,7 +25,7 @@ Your goal is to produce data which mirrors the given examples in causal structur
 I will give you real examples first.
 
 Context: Leverage your knowledge about health, demographics, and insurance to generate 1000 realistic but diverse samples. 
-Output the data as a Python dictionary list or as a pandas DataFrame code snippet.
+Output the data in a csv format where I can directly copy and paste into a csv.
 
 Example data: {sample_data}
 
