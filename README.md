@@ -76,6 +76,12 @@ model_deployment.py
 
 **In Progress:** Evaluation scripts assess the utility of generated synthetic data. Due to lab privacy requirements, some evaluation metrics and methods may not be included in this repository.
 
+## References
+
+[1] The prompt structure used for synthetic data generation is adapted from example B.5 of the research paper: *Curated LLM: Synergy of LLMs and Data Curation for Tabular Augmentation in Low-Data Regimes* by Seedatk, Huynh, et al. The reference is specifically applied in the data generation prompt structure within this codebase to emulate realistic and diverse synthetic samples. For further details, refer to the full paper [here](https://arxiv.org/pdf/2312.12112).
+
+[2] The list of real tabular datasets used in this research is adapted from Appendix A of the paper: *AutoDiff: Diffusion-based Generative Models for Tabular Data Synthesis*, as detailed by the authors. This list has been integrated to ensure comprehensive evaluation across diverse dataset types. For more information, please see the full paper [here](https://arxiv.org/pdf/2310.15479).
+
 ## In Progress:
 
 #### This project is currently evolving to include advanced methods for synthetic data generation and evaluation. Planned tasks include:
