@@ -90,7 +90,10 @@ model_deployment.py
 
 ### Running Evaluation Tests
 
-**In Progress:** Evaluation scripts assess the utility of generated synthetic data. Due to lab privacy requirements, some evaluation metrics and methods may not be included in this repository.
+Evaluations for this project primarily assess the utility of generated synthetic data, but can also evaluate fidelity and privacy. Due to lab privacy requirements, some evaluation metrics and methods may not be included in this repository. To run evaluation scripts on fidelity, utility, and privacy:
+```bash
+evaluation.py
+```
 
 ## Models Deployed
 Specific models deployed via the Groq API include:

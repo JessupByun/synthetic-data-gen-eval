@@ -15,6 +15,7 @@ client = Groq(api_key=api_key)
 model_names = ["llama-3.1-70b-versatile", "llama-3.1-8b-instant", "llama-3.2-1b-preview"]
 
 # This prompt structure is adapted from the prompt example B.5. from the research paper: "Curated LLM: Synergy of LLMs and Data Curation for tabular augmentation in low-data regimes" (Seedatk, Huynh, et al.) https://arxiv.org/pdf/2312.12112 
+# The template is currently adapted to the 'insurance.csv' dataset (referenced in README.md)
 prompt_template = """
 System role: You are a tabular synthetic data generation model.
 
@@ -23,52 +24,28 @@ Your goal is to produce data which mirrors the given examples in causal structur
 
 I will give you real examples first.
 
-Context: Leverage your medical knowledge about COVID-19 and Brazil to generate 1000 realistic but diverse samples.
+Context: Leverage your knowledge about health, demographics, and insurance to generate 1000 realistic but diverse samples. 
+Output the data as a Python dictionary list or as a pandas DataFrame code snippet.
 
 Example data: {sample_data}
 
 The output should be a markdown code snippet formatted in the following schema:
 
-"Sex_male": string // feature column
-"Age": string // feature column
-"Age_40": string // feature column
-"Age_40_50": string // feature column
-"Age_50_60": string // feature column
-"Age_60_70": string // feature column
-"Age_70": string // feature column
-"Fever": string // feature column
-"Cough": string // feature column
-"Sore_throat": string // feature column
-"Shortness_of_breath": string // feature column
-"Respiratory_discomfort": string // feature column
-"SPO2": string // feature column
-"Dihareea": string // feature column
-"Vomitting": string // feature column
-"Cardiovascular": string // feature column
-"Asthma": string // feature column
-"Diabetis": string // feature column
-"Pulmonary": string // feature column
-"Immunosuppresion": string // feature column
-"Obesity": string // feature column
-"Liver": string // feature column
-"Neurologic": string // feature column
-"Renal": string // feature column
-"Branca": string // feature column
-"Preta": string // feature column
-"Amarela": string // feature column
-"Parda": string // feature column
-"Indigena": string // feature column
-"is_dead": string // label if patient dead or not, is_dead
+"age": integer // feature column for the person's age
+"sex": string // feature column, male or female
+"bmi": float // feature column for body mass index
+"children": integer // feature column for number of children
+"smoker": string // feature column, yes or no for smoking status
+"region": string // feature column for region (northeast, southeast, southwest, northwest)
+"charges": float // label column for insurance charges
 
 DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
-
-Please generate {num_rows} rows of data.
 """
 
 # Function to generate synthetic data using a model and prompt
-def generate_synthetic_data(model_name, sample_data, num_rows):
+def generate_synthetic_data(model_name, sample_data):
 
-    prompt = prompt_template.format(sample_data = sample_data, num_rows=num_rows)
+    prompt = prompt_template.format(sample_data = sample_data)
     
     try:
         # Create a chat completion using the Groq API
@@ -94,14 +71,13 @@ def generate_synthetic_data(model_name, sample_data, num_rows):
 
 # Main function to run the process
 def main():
-    sample_data = None
-    num_rows = 100
+    sample_data = "sample_datasets/insurance.csv"
 
     for model_name in model_names:
         print(f"Generating data with {model_name}...")
         
         # Generate synthetic data with n rows!
-        data = generate_synthetic_data(model_name, sample_data, num_rows)
+        data = generate_synthetic_data(model_name, sample_data)
 
         print(f"Generated Data for {model_name}:\n{data}\n")
 
