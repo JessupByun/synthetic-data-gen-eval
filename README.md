@@ -2,6 +2,12 @@
 
 ## Research Project: Synthetic Data Generation and Evaluation with Advanced Models
 
+- **Undergraduate Researcher:** Jessup Byun, UCLA
+- **Project Start Date:** September 2024
+- **Research Mentor:** Xiaofeng Lin, PhD Statistics, UCLA  
+- **Faculty Advisor:** Prof. Guang Cheng, UCLA Trustworthy AI Lab
+---
+
 This repository contains the codebase for my independent research conducted at the **UCLA Trustworthy AI Lab** during **Fall '24**. My research focuses on synthetic tabular data generation and evaluation using advanced models like **LLaMA** and **TabSyn** deployed through frameworks like the **Groq API**. This work assesses the tradeoff between utility and privacy in synthetic data generation.
 
 ⚠️ **Note**: Some code and evaluation components, particularly those involving lab-specific methods, may be omitted or simplified to maintain security and lab privacy standards. 
