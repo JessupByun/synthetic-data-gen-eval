@@ -2,4 +2,4 @@
 alfred-analytica/
 .env
 .DS_Store
-evaluation.py
+insurance_alfred_evaluation.py
