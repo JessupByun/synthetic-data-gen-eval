@@ -1,7 +1,7 @@
 # synthetic-data-gen-eval
 
 ## Table of Contents
-1. [Project Overview](#project-overview:-synthetic-data-generation-and-evaluation-with-advanced-models)
+1. [Project Overview](#project-overview)
 2. [Repository Structure](#repository-structure)
 3. [Installation and Setup](#installation-and-setup)
    - [1. Clone the Repository](#1-clone-the-repository)
@@ -15,7 +15,7 @@
 7. [References](#references)
 8. [In Progress](#in-progress)
 
-## Project Overview: Synthetic Data Generation and Evaluation with Advanced Models
+## Project Overview
 
 - **Undergraduate Researcher:** Jessup Byun, UCLA
 - **Project Start Date:** September 2024
