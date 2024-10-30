@@ -1,5 +1,10 @@
 .venv/
-alfred-analytica/
 .env
 .DS_Store
+
+# Ignore alfred-analytica repository
+alfred-analytica/
+
+# Ignore alfred-analytica research work/evaluations until public
 insurance_alfred_evaluation.py
+insurance_alfred_test_results

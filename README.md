@@ -83,17 +83,18 @@ GROQ_API_KEY="your_api_key_here"
 
 ### Running the Model Deployment Script
 
-To deploy models for synthetic data generation:
+To deploy models for synthetic data generation, enter the folder of the sample dataset and run:
 ```bash
-model_deployment.py
+{folder_name}_model_deployment.py
 ```
 
 ### Running Evaluation Tests
 
 Evaluations for this project primarily assess the utility of generated synthetic data, but can also evaluate fidelity and privacy. Due to lab privacy requirements, some evaluation metrics and methods may not be included in this repository. To run evaluation scripts on fidelity, utility, and privacy:
 ```bash
-evaluation.py
+{folder_name}_evaluation.py
 ```
+Once available, it may also be possible to run another script that uses the proprietary "Alfred_Analytica" evaluation library developed by the UCLA Trustworthy AI Lab
 
 ## Models Deployed
 Specific models deployed via the Groq API include:
