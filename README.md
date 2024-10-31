@@ -29,12 +29,18 @@ This repository contains the codebase for my independent research conducted at t
 
 ## Repository Structure
 
+## Project Structure
+
 The repository is organized as follows:
 
-- **Model Deployment (`model_deployment.py`)**: Contains code for deploying models via the Groq API for synthetic data generation. Model prompts and generation parameters can be customized in this file.
-- **Evaluation Scripts**: Scripts to evaluate utility and privacy metrics on generated data using custom lab-developed frameworks. Sensitive evaluation metrics and some proprietary code are excluded.
-- **Sample Datasets (`sample_datasets/`)**: Includes real-world datasets used as samples for synthetic data generation and baselines for evaluation. Datasets in this folder are referenced in code as part of the generation and evaluation processes.
-- **`requirements.txt`**: Lists dependencies needed to run the project. Excludes sensitive packages or proprietary libraries.
+- **`evaluation/`**: Contains evaluation scripts for each dataset, such as `dataset_name_evaluation.py` and `dataset_name_alfred_analytica_evaluation.py`. Each test dataset can have its own subdirectories for evaluation results (e.g., `{dataset_name}_alfred_analytica_evaluation_results`) - currently remains private
+
+- **`model_deployment/`**: Contains deployment scripts for generating synthetic data for each test case, named as `dataset_name_model_deployment.py`
+
+- **`test_data/`**: Stores real and synthetic datasets for testing purposes
+  - **`real_data/`**: Directory for real datasets, with files like `dataset_name.csv`
+  - **`synthetic_data/`**: Directory for synthetic datasets, with files like `dataset_name_synthetic_data.csv`
+      - Can have two separate files denoting whether or not the data was generated with a high/low data regime context input. e.g. `dataset_name_synthetic_data_low_regime.csv`
 
 ## Installation and Setup
 
