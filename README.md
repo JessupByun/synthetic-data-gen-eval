@@ -33,7 +33,7 @@ This repository contains the codebase for my independent research conducted at t
 
 The repository is organized as follows:
 
-- **`evaluation/`**: Contains evaluation scripts for each dataset, such as `dataset_name_evaluation.py` and `dataset_name_alfred_analytica_evaluation.py`. Each test dataset can have its own subdirectories for evaluation results (e.g., `{dataset_name}_alfred_analytica_evaluation_results`) - currently remains private
+- **`evaluation/`**: Contains evaluation scripts for each dataset, such as `dataset_name_evaluation.py` and `dataset_name_alfred_analytica_evaluation.py`. Each test dataset can have its own subdirectories for evaluation results (e.g., `{dataset_name}_alfred_analytica_evaluation_results`) - currently private
 
 - **`model_deployment/`**: Contains deployment scripts for generating synthetic data for each test case, named as `dataset_name_model_deployment.py`
 
@@ -89,17 +89,19 @@ GROQ_API_KEY="your_api_key_here"
 
 ### Running the Model Deployment Script
 
-To deploy models for synthetic data generation, enter the folder of the sample dataset and run:
+To deploy models for synthetic data generation, enter the `model_deployment/` folder and run:
 ```bash
-{folder_name}_model_deployment.py
+model_deployment/dataset_name_model_deployment.py
 ```
 
 ### Running Evaluation Tests
 
 Evaluations for this project primarily assess the utility of generated synthetic data, but can also evaluate fidelity and privacy. Due to lab privacy requirements, some evaluation metrics and methods may not be included in this repository. To run evaluation scripts on fidelity, utility, and privacy:
+
 ```bash
-{folder_name}_evaluation.py
+evaluation/dataset_name/evaluation.py
 ```
+
 Once available, it may also be possible to run another script that uses the proprietary "Alfred_Analytica" evaluation library developed by the UCLA Trustworthy AI Lab
 
 ## Models Deployed
