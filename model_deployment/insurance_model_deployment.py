@@ -30,7 +30,7 @@ Output the data in a csv format where I can directly copy and paste into a csv.
 
 Example data: {data}
 
-The output should be a markdown code snippet formatted in the following schema:
+The output should be in JSON format with the following schema:
 
 "age": integer // feature column for the person's age
 "sex": string // feature column, male or female
@@ -57,7 +57,8 @@ def generate_synthetic_data(model_name, data):
                     "content": prompt
                 }
             ],
-            model=model_name
+            model=model_name,
+            response_format={"type": "json_object"}
         )
         
         # Print the full response for debugging
@@ -74,7 +75,7 @@ def generate_synthetic_data(model_name, data):
 def main():
 
     # Only keep first n (100) rows of data to feed to model
-    data = "insurance/insurance.csv"
+    data = "test_data/real_data/insurance.csv"
     limited_data_df = pd.read_csv(data).head(100)
     data = limited_data_df.to_csv(index=False)
     print(data)

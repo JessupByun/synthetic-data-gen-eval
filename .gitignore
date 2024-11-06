@@ -6,6 +6,4 @@
 alfred-analytica/
 
 # Ignore alfred-analytica research work/evaluations until public
-evaluation/insurance/insurance_alfred_evaluation.py
-evaluation/insurance/insurance_alfred_test_results
-evaluation/insurance/insurance_alfred_evaluation_results
+alfred_evaluation/
