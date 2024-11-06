@@ -1,7 +1,18 @@
 import os
 import pandas as pd
+from sklearn.model_selection import train_test_split
 from dotenv import load_dotenv
 from groq import Groq
+
+# Load the real data
+data_csv = "test_data/real_data/insurance.csv"
+data = pd.read_csv(data_csv)
+
+# Split the data into train and test sets
+train_data, test_data = train_test_split(data, test_size=0.2, random_state=42)
+
+# Export the test set to a CSV file for evaluation
+test_data.to_csv("test_data/real_data/insurance_test_data.csv", index=False)
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -14,6 +25,9 @@ client = Groq(api_key=api_key)
 
 # List of model ID names that will be deployed. Visit groq API documentation for more models
 model_names = ["llama-3.1-70b-versatile", "llama-3.1-8b-instant", "llama-3.2-1b-preview"]
+
+# Define temperature parameter for model (controls randomness and diversity, as temp -> 0, model becomes more deterministic and repetitive)
+temperature = 0.3
 
 # This prompt structure is adapted from the prompt example B.5. from the research paper: "Curated LLM: Synergy of LLMs and Data Curation for tabular augmentation in low-data regimes" (Seedatk, Huynh, et al.) https://arxiv.org/pdf/2312.12112 
 # The template is currently adapted to the 'insurance.csv' dataset (referenced in README.md)
@@ -30,7 +44,7 @@ Output the data in a csv format where I can directly copy and paste into a csv.
 
 Example data: {data}
 
-The output should be in JSON format with the following schema:
+The output should use the following schema:
 
 "age": integer // feature column for the person's age
 "sex": string // feature column, male or female
@@ -58,7 +72,8 @@ def generate_synthetic_data(model_name, data):
                 }
             ],
             model=model_name,
-            response_format={"type": "json_object"}
+            #response_format={"type": "json_object"} Turn on for JSON beta mode
+            temperature=temperature
         )
         
         # Print the full response for debugging
@@ -73,18 +88,12 @@ def generate_synthetic_data(model_name, data):
 
 # Main function to run the process
 def main():
-
-    # Only keep first n (100) rows of data to feed to model
-    data = "test_data/real_data/insurance.csv"
-    limited_data_df = pd.read_csv(data).head(100)
-    data = limited_data_df.to_csv(index=False)
-    print(data)
     
     for model_name in model_names:
         print(f"Generating data with {model_name}...")
         
         # Generate synthetic data with n rows!
-        data = generate_synthetic_data(model_name, data)
+        data = generate_synthetic_data(model_name, train_data)
 
         print(f"Generated Data for {model_name}:\n{data}\n")
 
