@@ -11,8 +11,8 @@ data = pd.read_csv(data_csv)
 # Split the data into train and test sets
 train_data, test_data = train_test_split(data, test_size=0.2, random_state=42)
 
-# Export the test set to a CSV file for evaluation
-test_data.to_csv("test_data/real_data/insurance_test_data.csv", index=False)
+# Define the n sample size of train_data
+train_data = train_data.sample(100)
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -24,7 +24,7 @@ api_key = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=api_key)
 
 # List of model ID names that will be deployed. Visit groq API documentation for more models
-model_names = ["llama-3.1-70b-versatile", "llama-3.1-8b-instant", "llama-3.2-1b-preview"]
+model_names = ["llama-3.1-70b-versatile"] #, "llama-3.1-8b-instant", "llama-3.2-1b-preview"]
 
 # Define temperature parameter for model (controls randomness and diversity, as temp -> 0, model becomes more deterministic and repetitive)
 temperature = 0.3
@@ -40,7 +40,7 @@ Your goal is to produce data which mirrors the given examples in causal structur
 I will give you real examples first.
 
 Context: Leverage your knowledge about health, demographics, and insurance to generate 1000 realistic but diverse samples. 
-Output the data in a csv format where I can directly copy and paste into a csv.
+Output the data in a csv format where I can directly copy and paste into a csv. Make sure the output does not use any quotation marks around the data entries (e.g. "male", "yes" should be male, yes)
 
 Example data: {data}
 
