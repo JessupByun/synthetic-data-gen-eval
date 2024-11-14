@@ -6,4 +6,7 @@
 alfred-analytica/
 
 # Ignore alfred-analytica research work/evaluations until public
-alfred_evaluation/
+alfred_evaluation_results/
+
+# Ignore evaluation scripts (alfred)
+evaluation/

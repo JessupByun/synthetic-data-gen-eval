@@ -16,6 +16,9 @@ train_data.to_csv('data/real_data/insurance_train.csv', index=False) # Will incl
 # Define the n sample size of train_data
 train_data = train_data.sample(100)
 
+# Define temperature parameter for model (controls randomness and diversity, as temp -> 0, model becomes more deterministic and repetitive)
+temperature = 0.3
+
 # Load environment variables from the .env file
 load_dotenv()
 
@@ -27,9 +30,6 @@ client = Groq(api_key=api_key)
 
 # List of model ID names that will be deployed. Visit groq API documentation for more models
 model_names = ["llama-3.1-70b-versatile"] #, "llama-3.1-8b-instant", "llama-3.2-1b-preview"]
-
-# Define temperature parameter for model (controls randomness and diversity, as temp -> 0, model becomes more deterministic and repetitive)
-temperature = 0.3
 
 # This prompt structure is adapted from the prompt example B.5. from the research paper: "Curated LLM: Synergy of LLMs and Data Curation for tabular augmentation in low-data regimes" (Seedatk, Huynh, et al.) https://arxiv.org/pdf/2312.12112 
 # The template is currently adapted to the 'insurance.csv' dataset (referenced in README.md)
