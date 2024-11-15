@@ -14,10 +14,10 @@ test_data.to_csv('data/real_data/insurance_test.csv', index=True)
 train_data.to_csv('data/real_data/insurance_train.csv', index=False) # Will include the entire training data, which will then be sampled in n sample sizes below.
 
 # Define the n sample size of train_data
-train_data = train_data.sample(100)
+train_data = train_data.sample(250)
 
 # Define temperature parameter for model (controls randomness and diversity, as temp -> 0, model becomes more deterministic and repetitive)
-temperature = 0.3
+temperature = 0.7
 
 # Load environment variables from the .env file
 load_dotenv()
