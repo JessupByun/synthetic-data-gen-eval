@@ -9,4 +9,4 @@ alfred-analytica/
 alfred_evaluation_results/
 
 # Ignore evaluation scripts (alfred)
-evaluation/
+alfred_evaluation/
