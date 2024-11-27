@@ -1,0 +1,10 @@
+Risk Type,Risk Value,Confidence Interval
+Singling Out,0.0,"(0.0, 0.05417109077677208)"
+Linkability,0.0,"(0.0, 1.0)"
+Inference (age),0.0,"(0.0, 1.0)"
+Inference (sex),0.0,"(0.0, 1.0)"
+Inference (bmi),0.0,"(0.0, 1.0)"
+Inference (children),0.0,"(0.0, 1.0)"
+Inference (smoker),0.0,"(0.0, 1.0)"
+Inference (region),0.0,"(0.0, 1.0)"
+Inference (charges),0.0,"(0.0, 1.0)"

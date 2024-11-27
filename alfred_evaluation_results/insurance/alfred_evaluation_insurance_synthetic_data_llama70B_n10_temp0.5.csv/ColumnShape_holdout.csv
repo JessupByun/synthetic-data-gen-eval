@@ -1,0 +1,31 @@
+Column,Metric,Score
+age,KSComplement,0.873120783894082
+sex,TVComplement,0.6455690890588445
+bmi,KSComplement,0.6782907919722196
+children,TVComplement,0.8252709323429747
+smoker,TVComplement,0.35149340635130466
+region,TVComplement,0.7834534562888826
+charges,KSComplement,0.31610696713142183
+All,Average Shape,0.6390436324342471
+age and sex,ContingencySimilarity,0.5513696115150181
+age and bmi,CorrelationSimilarity,0.9115199096296005
+age and children,ContingencySimilarity,0.7178841574082817
+age and smoker,ContingencySimilarity,0.3244788552124971
+age and region,ContingencySimilarity,0.604506971327857
+age and charges,CorrelationSimilarity,0.8537697599018553
+sex and bmi,ContingencySimilarity,0.4244799043212789
+sex and children,ContingencySimilarity,0.6287623663697689
+sex and smoker,ContingencySimilarity,0.34142196204324415
+sex and region,ContingencySimilarity,0.5419800879153159
+sex and charges,ContingencySimilarity,0.489241389439671
+bmi and children,ContingencySimilarity,0.48254807540993927
+bmi and smoker,ContingencySimilarity,0.30192301639757024
+bmi and region,ContingencySimilarity,0.4459551610906536
+bmi and charges,CorrelationSimilarity,0.6384642629221412
+children and smoker,ContingencySimilarity,0.34962599271918504
+children and region,ContingencySimilarity,0.583493322422602
+children and charges,ContingencySimilarity,0.6012547341033792
+smoker and region,ContingencySimilarity,0.3253915798529149
+smoker and charges,ContingencySimilarity,0.35149340635130455
+region and charges,ContingencySimilarity,0.5487573306476148
+All Pairs,Average Corr Similarity,0.5246819931905569

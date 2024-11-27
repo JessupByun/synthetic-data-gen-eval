@@ -5,8 +5,10 @@
 # Ignore alfred-analytica repository
 alfred-analytica/
 
-# Ignore alfred-analytica research work/evaluations until public
-alfred_evaluation_results/
-
 # Ignore evaluation scripts (alfred)
 alfred_evaluation/
+
+# Ignore private datasets
+data/real_data/private_combined_df_cty_week2_for_synth.csv
+data/real_data/private_labMergeDemo1Trimmed.csv
+data/real_data/private_nationscape_indv_df.csv
