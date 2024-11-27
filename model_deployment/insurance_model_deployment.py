@@ -17,7 +17,7 @@ train_data.to_csv('data/real_data/insurance_train.csv', index=False) # Will incl
 train_data = train_data.sample(250)
 
 # Define temperature parameter for model (controls randomness and diversity, as temp -> 0, model becomes more deterministic and repetitive)
-temperature = 0.7
+temperature = 1
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -42,7 +42,7 @@ Your goal is to produce data which mirrors the given examples in causal structur
 I will give you real examples first.
 
 Context: Leverage your knowledge about health, demographics, and insurance to generate 1000 realistic but diverse samples. 
-Output the data in a csv format where I can directly copy and paste into a csv. Make sure the output does not use any quotation marks around the data entries (e.g. "male", "yes" should be male, yes)
+Output the data in a csv format where I can directly copy and paste into a csv.
 
 Example data: {data}
 
