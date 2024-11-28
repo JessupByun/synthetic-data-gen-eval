@@ -5,16 +5,16 @@ from dotenv import load_dotenv
 from groq import Groq
 
 # Load the real data
-data_csv = "data/real_data/private_combined_df_cty_week2/private_combined_df_cty_week2_for_synth.csv"
+data_csv = "data/real_data/insurance.csv"
 data = pd.read_csv(data_csv)
 
 # Split the data into train and test sets
 train_data, test_data = train_test_split(data, test_size=0.8, random_state=42)
-test_data.to_csv('data/real_data/private_combined_df_cty_week2/private_combined_df_cty_week2_test.csv', index=True)
-train_data.to_csv('data/real_data/private_combined_df_cty_week2/private_combined_df_cty_week2_train.csv', index=False) # Will include the entire training data, which will then be sampled in n sample sizes below.
+test_data.to_csv('data/real_data/insurance_test.csv', index=True)
+train_data.to_csv('data/real_data/insurance_train.csv', index=False) # Will include the entire training data, which will then be sampled in n sample sizes below.
 
 # Define the n sample size of train_data
-train_data = train_data.sample(50)
+train_data = train_data.sample(250)
 
 # Define temperature parameter for model (controls randomness and diversity, as temp -> 0, model becomes more deterministic and repetitive)
 temperature = 1
@@ -41,30 +41,20 @@ Your goal is to produce data which mirrors the given examples in causal structur
 
 I will give you real examples first.
 
-Context: Leverage your knowledge about COVID-19 trends, social behavior, and population statistics to generate 1000 realistic but diverse samples.
+Context: Leverage your knowledge about health, demographics, and insurance to generate 1000 realistic but diverse samples. 
 Output the data in a csv format where I can directly copy and paste into a csv.
 
 Example data: {data}
 
 The output should use the following schema:
 
-"state": string, // feature column for the state
-"county_fips": string, // feature column for the county FIPS code
-"week": string, // feature column for the week range
-"mask_user_pct": float, // feature column for the percentage of mask users
-"mask_mandate": string, // feature column, yes or no for mask mandate
-"gop_vote_share_2016": float, // feature column for GOP vote share in 2016
-"deaths_per_10k": float, // feature column for deaths per 10,000 (nullable)
-"COVID_news": float, // feature column for COVID news coverage percentage
-"retail_visit_per_hundred": float, // feature column for retail visits per 100 people
-"COVID_news_cable": float, // feature column for COVID-related cable news coverage
-"urban_population_percentage": float, // feature column for urban population percentage
-"image_users": integer, // feature column for number of image users
-"mask_users": integer, // feature column for number of mask users
-"population_density": float, // feature column for population density
-"week_counter": integer, // feature column for week counter
-"week_counter_log": float, // feature column for log of week counter
-"population": integer // feature column for total population
+"age": integer // feature column for the person's age
+"sex": string // feature column, male or female
+"bmi": float // feature column for body mass index
+"children": integer // feature column for number of children
+"smoker": string // feature column, yes or no for smoking status
+"region": string // feature column for region (northeast, southeast, southwest, northwest)
+"charges": float // label column for insurance charges
 
 DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
 """
