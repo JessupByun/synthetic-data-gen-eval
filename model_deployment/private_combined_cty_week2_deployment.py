@@ -14,7 +14,7 @@ test_data.to_csv('data/real_data/private_combined_df_cty_week2/private_combined_
 train_data.to_csv('data/real_data/private_combined_df_cty_week2/private_combined_df_cty_week2_train.csv', index=False) # Will include the entire training data, which will then be sampled in n sample sizes below.
 
 # Define the n sample size of train_data
-train_data = train_data.sample(50)
+train_data = train_data.sample(200)
 
 # Define temperature parameter for model (controls randomness and diversity, as temp -> 0, model becomes more deterministic and repetitive)
 temperature = 1

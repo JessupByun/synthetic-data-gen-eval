@@ -14,7 +14,7 @@ test_data.to_csv('data/real_data/private_nationscape_indv/private_nationscape_in
 train_data.to_csv('data/real_data/private_nationscape_indv/private_nationscape_indv_train.csv', index=False) # Will include the entire training data, which will then be sampled in n sample sizes below.
 
 # Define the n sample size of train_data
-train_data = train_data.sample(250)
+train_data = train_data.sample(37900)
 
 # Define temperature parameter for model (controls randomness and diversity, as temp -> 0, model becomes more deterministic and repetitive)
 temperature = 1
@@ -41,20 +41,26 @@ Your goal is to produce data which mirrors the given examples in causal structur
 
 I will give you real examples first.
 
-Context: Leverage your knowledge about health, demographics, and insurance to generate 1000 realistic but diverse samples. 
+Context: Leverage your knowledge about demographics, voting patterns, and health behaviors to generate 1000 realistic but diverse samples. 
 Output the data in a csv format where I can directly copy and paste into a csv.
 
 Example data: {data}
 
 The output should use the following schema:
 
-"age": integer // feature column for the person's age
-"sex": string // feature column, male or female
-"bmi": float // feature column for body mass index
-"children": integer // feature column for number of children
-"smoker": string // feature column, yes or no for smoking status
-"region": string // feature column for region (northeast, southeast, southwest, northwest)
-"charges": float // label column for insurance charges
+"response_id": string // A unique identifier for each respondent
+"start_date": string (ISO datetime format) // Timestamp when the response was recorded
+"state": string // U.S. state abbreviation
+"congress_district": string // Congressional district (state abbreviation + district number)
+"county": string or NA // County name (optional, may contain missing values)
+"age": integer // Age of the respondent
+"gender": string // Gender of the respondent (e.g., Male, Female, Non-Binary, etc.)
+"weight": float // A weighting factor for the response
+"extra_covid_worn_mask": string // Response to whether an extra mask was worn (e.g., Yes, No, Sometimes)
+"vote_2020": string or NA // Voting behavior in the 2020 election (e.g., Biden, Trump, NA for missing)
+"pid7": string // Seven-point political identification scale (e.g., Strong Republican, Lean Democrat)
+"date": string (ISO date format) // The date of the response
+"worn": boolean // Whether the respondent has worn a mask recently (TRUE/FALSE)
 
 DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
 """

@@ -5,13 +5,13 @@ from dotenv import load_dotenv
 from groq import Groq
 
 # Load the real data
-data_csv = "data/real_data/insurance.csv"
+data_csv = "data/real_data/Insurance/insurance.csv"
 data = pd.read_csv(data_csv)
 
 # Split the data into train and test sets
 train_data, test_data = train_test_split(data, test_size=0.8, random_state=42)
-test_data.to_csv('data/real_data/insurance_test.csv', index=True)
-train_data.to_csv('data/real_data/insurance_train.csv', index=False) # Will include the entire training data, which will then be sampled in n sample sizes below.
+test_data.to_csv('data/real_data/Insurance/insurance_test.csv', index=True)
+train_data.to_csv('data/real_data/Insurance/insurance_train.csv', index=False) # Will include the entire training data, which will then be sampled in n sample sizes below.
 
 # Define the n sample size of train_data
 train_data = train_data.sample(250)

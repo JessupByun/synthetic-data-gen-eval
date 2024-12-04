@@ -14,7 +14,7 @@ test_data.to_csv('data/real_data/private_labMergeDemo1Trimmed/private_labMergeDe
 train_data.to_csv('data/real_data/private_labMergeDemo1Trimmed/private_labMergeDemo1Trimmed_train.csv', index=False) # Will include the entire training data, which will then be sampled in n sample sizes below.
 
 # Define the n sample size of train_data
-train_data = train_data.sample(250)
+train_data = train_data.sample(15744)
 
 # Define temperature parameter for model (controls randomness and diversity, as temp -> 0, model becomes more deterministic and repetitive)
 temperature = 1
@@ -41,20 +41,26 @@ Your goal is to produce data which mirrors the given examples in causal structur
 
 I will give you real examples first.
 
-Context: Leverage your knowledge about health, demographics, and insurance to generate 1000 realistic but diverse samples. 
+Context: Leverage your knowledge about healthcare, demographics, and patient data to generate 1000 realistic but diverse samples. 
 Output the data in a csv format where I can directly copy and paste into a csv.
 
 Example data: {data}
 
 The output should use the following schema:
 
-"age": integer // feature column for the person's age
-"sex": string // feature column, male or female
-"bmi": float // feature column for body mass index
-"children": integer // feature column for number of children
-"smoker": string // feature column, yes or no for smoking status
-"region": string // feature column for region (northeast, southeast, southwest, northwest)
-"charges": float // label column for insurance charges
+"subject_id_x": integer // Unique identifier for the subject
+"admittime_y": string (ISO datetime format) // Admission time for the patient
+"dischtime": string (ISO datetime format) // Discharge time for the patient
+"Age": integer // Age of the patient
+"gender": string // Gender of the patient (e.g., M, F, etc.)
+"ethnicity": string // Ethnic background of the patient (e.g., WHITE, BLACK, ASIAN, etc.)
+"insurance": string // Type of insurance coverage (e.g., Medicare, Private, Other, etc.)
+"label": integer // A binary outcome (e.g., 0 or 1 for classification tasks)
+"dod": string (ISO datetime format) // Date of death, if applicable
+"charttime": string (ISO datetime format) // Time of chart recording
+"admittime_x": string (ISO datetime format) // Another admission time (related field)
+"lab_time_from_admit": float // Time in hours from admission to lab measurement
+"valuenum": float // A numeric value representing a lab test result
 
 DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
 """
