@@ -48,19 +48,19 @@ Example data: {data}
 
 The output should use the following schema:
 
-"subject_id_x": integer // Unique identifier for the subject
-"admittime_y": string (ISO datetime format) // Admission time for the patient
-"dischtime": string (ISO datetime format) // Discharge time for the patient
-"Age": integer // Age of the patient
-"gender": string // Gender of the patient (e.g., M, F, etc.)
-"ethnicity": string // Ethnic background of the patient (e.g., WHITE, BLACK, ASIAN, etc.)
-"insurance": string // Type of insurance coverage (e.g., Medicare, Private, Other, etc.)
-"label": integer // A binary outcome (e.g., 0 or 1 for classification tasks)
-"dod": string (ISO datetime format) // Date of death, if applicable
-"charttime": string (ISO datetime format) // Time of chart recording
-"admittime_x": string (ISO datetime format) // Another admission time (related field)
-"lab_time_from_admit": float // Time in hours from admission to lab measurement
-"valuenum": float // A numeric value representing a lab test result
+"subject_id_x": integer // Unique identifier for the patient in the dataset
+"admittime_y": string (ISO datetime format) // Time and date when the patient was admitted to the hospital
+"dischtime": string (ISO datetime format) // Time and date when the patient was discharged from the hospital
+"Age": integer // Age of the patient at the time of admission
+"gender": string // Gender of the patient (e.g., M for male, F for female)
+"ethnicity": string // Reported ethnicity of the patient (e.g., WHITE, BLACK/AFRICAN AMERICAN, HISPANIC/LATINO, etc.)
+"insurance": string // Type of insurance coverage for the patient (e.g., Medicare, Medicaid, Other, etc.)
+"label": integer // Binary outcome indicator; 0 typically represents no event or negative outcome
+"dod": string (ISO datetime format) // Date of death if applicable; "1970-01-01" indicates no death recorded
+"charttime": string (ISO datetime format) // Time and date of the recorded lab or clinical chart event
+"admittime_x": string (ISO datetime format) // Duplicate or secondary admission time for specific use in lab calculations
+"lab_time_from_admit": float // Time elapsed in hours from the admission to the lab measurement time
+"valuenum": float // A numeric value indicating the result of a lab test or clinical measurement
 
 DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
 """
