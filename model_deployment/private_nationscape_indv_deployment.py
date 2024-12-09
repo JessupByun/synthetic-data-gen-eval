@@ -52,12 +52,12 @@ The output should use the following schema:
 "start_date": string // feature column for the timestamp when the response was recorded (ISO datetime format)
 "state": string // feature column for the U.S. state abbreviation of the respondent
 "congress_district": string // feature column for the congressional district (state abbreviation + district number)
-"county": string or null // feature column for the name of the county, nullable for missing values
+"county": float // feature column for county
 "age": integer // feature column for the age of the respondent
 "gender": string // feature column for the gender of the respondent
 "weight": float // feature column for a weighting factor associated with the response
-"extra_covid_worn_mask": string // feature column for the response to whether an extra mask was worn
-"vote_2020": string or null // feature column for the voting behavior in the 2020 election, nullable for missing values
+"extra_covid_worn_mask": string // feature column for whether an extra mask was worn (yes/no)
+"vote_2020": float // feature column for the voting behavior in the 2020 election
 "pid7": string // feature column for the seven-point political identification scale
 "date": string // feature column for the date of the response (ISO date format)
 "worn": boolean // label column indicating whether the respondent has recently worn a mask (TRUE/FALSE)
