@@ -33,7 +33,7 @@ model_names = ["llama-3.1-70b-versatile"] #, "llama-3.1-8b-instant", "llama-3.2-
 
 # This prompt structure is adapted from the prompt example B.5. from the research paper: "Curated LLM: Synergy of LLMs and Data Curation for tabular augmentation in low-data regimes" (Seedatk, Huynh, et al.) https://arxiv.org/pdf/2312.12112 
 # The template is currently adapted to the 'insurance.csv' dataset (referenced in README.md)
-prompt_template = """
+prompt_template_baseline = """
 System role: You are a tabular synthetic data generation model.
 
 You are a synthetic data generator.
@@ -48,19 +48,51 @@ Example data: {data}
 
 The output should use the following schema:
 
-"subject_id_x": integer // Unique identifier for the patient in the dataset
-"admittime_y": string (ISO datetime format) // Time and date when the patient was admitted to the hospital
-"dischtime": string (ISO datetime format) // Time and date when the patient was discharged from the hospital
-"Age": integer // Age of the patient at the time of admission
-"gender": string // Gender of the patient (e.g., M for male, F for female)
-"ethnicity": string // Reported ethnicity of the patient (e.g., WHITE, BLACK/AFRICAN AMERICAN, HISPANIC/LATINO, etc.)
-"insurance": string // Type of insurance coverage for the patient (e.g., Medicare, Medicaid, Other, etc.)
-"label": integer // Binary outcome indicator; 0 typically represents no event or negative outcome
-"dod": string (ISO datetime format) // Date of death if applicable; "1970-01-01" indicates no death recorded
-"charttime": string (ISO datetime format) // Time and date of the recorded lab or clinical chart event
-"admittime_x": string (ISO datetime format) // Duplicate or secondary admission time for specific use in lab calculations
-"lab_time_from_admit": float // Time elapsed in hours from the admission to the lab measurement time
-"valuenum": float // A numeric value indicating the result of a lab test or clinical measurement
+"subject_id_x": integer // feature column for the unique identifier of the patient
+"admittime_y": string // feature column for the admission time and date (ISO datetime format)
+"dischtime": string // feature column for the discharge time and date (ISO datetime format)
+"Age": integer // feature column for the age of the patient at the time of admission
+"gender": string // feature column for the gender of the patient
+"ethnicity": string // feature column for the reported ethnicity of the patient
+"insurance": string // feature column for the type of insurance coverage of the patient
+"label": integer // feature column indicating a binary outcome (e.g., event occurrence or not)
+"dod": string // feature column for the date of death, if applicable (ISO datetime format)
+"charttime": string // feature column for the time and date of a lab or clinical chart event (ISO datetime format)
+"admittime_x": string // feature column for a secondary admission time used for lab-related calculations (ISO datetime format)
+"lab_time_from_admit": float // feature column for the time elapsed in hours from admission to lab measurement
+"valuenum": float // label column for the numerical result of a lab test or clinical measurement
+
+DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
+"""
+
+prompt_template_advanced = """
+System role: You are a tabular synthetic data generation model.
+
+You are a synthetic data generator.
+Your goal is to produce data which mirrors the given examples in causal structure and feature and label distributions but also produce as diverse samples as possible.
+
+I will give you real examples first.
+
+Context: Leverage your knowledge about healthcare, demographics, and patient data to generate 1000 realistic but diverse samples. 
+Output the data in a csv format where I can directly copy and paste into a csv.
+
+Example data: {data}
+
+The output should use the following schema:
+
+"subject_id_x": integer // feature column for the unique identifier of the patient
+"admittime_y": string // feature column for the admission time and date (ISO datetime format)
+"dischtime": string // feature column for the discharge time and date (ISO datetime format)
+"Age": integer // feature column for the age of the patient at the time of admission
+"gender": string // feature column for the gender of the patient
+"ethnicity": string // feature column for the reported ethnicity of the patient
+"insurance": string // feature column for the type of insurance coverage of the patient
+"label": integer // feature column indicating a binary outcome (e.g., event occurrence or not)
+"dod": string // feature column for the date of death, if applicable (ISO datetime format)
+"charttime": string // feature column for the time and date of a lab or clinical chart event (ISO datetime format)
+"admittime_x": string // feature column for a secondary admission time used for lab-related calculations (ISO datetime format)
+"lab_time_from_admit": float // feature column for the time elapsed in hours from admission to lab measurement
+"valuenum": float // label column for the numerical result of a lab test or clinical measurement
 
 DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
 """
@@ -68,7 +100,7 @@ DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples whic
 # Function to generate synthetic data using a model and prompt
 def generate_synthetic_data(model_name, data):
 
-    prompt = prompt_template.format(data = data)
+    prompt = prompt_template_baseline.format(data = data)
     
     try:
         # Create a chat completion using the Groq API

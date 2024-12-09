@@ -29,11 +29,11 @@ api_key = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=api_key)
 
 # List of model ID names that will be deployed. Visit groq API documentation for more models
-model_names = ["llama-3.1-70b-versatile"] #, "llama-3.1-8b-instant", "llama-3.2-1b-preview"]
+model_names = ["mixtral-8x7b-32768"] #, "llama-3.1-8b-instant", "llama-3.2-1b-preview"] mixtral-8x7b-32768	llama-3.1-70b-versatile
 
 # This prompt structure is adapted from the prompt example B.5. from the research paper: "Curated LLM: Synergy of LLMs and Data Curation for tabular augmentation in low-data regimes" (Seedatk, Huynh, et al.) https://arxiv.org/pdf/2312.12112 
 # The template is currently adapted to the 'insurance.csv' dataset (referenced in README.md)
-prompt_template = """
+prompt_template_baseline = """
 System role: You are a tabular synthetic data generation model.
 
 You are a synthetic data generator.
@@ -48,23 +48,59 @@ Example data: {data}
 
 The output should use the following schema:
 
-"state": string, // feature column for the state
-"county_fips": string, // feature column for the county FIPS code
-"week": string, // feature column for the week range
-"mask_user_pct": float, // feature column for the percentage of mask users
-"mask_mandate": string, // feature column, yes or no for mask mandate
-"gop_vote_share_2016": float, // feature column for GOP vote share in 2016
-"deaths_per_10k": float, // feature column for deaths per 10,000 (nullable)
-"COVID_news": float, // feature column for COVID news coverage percentage
-"retail_visit_per_hundred": float, // feature column for retail visits per 100 people
-"COVID_news_cable": float, // feature column for COVID-related cable news coverage
-"urban_population_percentage": float, // feature column for urban population percentage
-"image_users": integer, // feature column for number of image users
-"mask_users": integer, // feature column for number of mask users
-"population_density": float, // feature column for population density
-"week_counter": integer, // feature column for week counter
-"week_counter_log": float, // feature column for log of week counter
-"population": integer // feature column for total population
+"state": string // feature column for the state name
+"county_fips": string // feature column for the county FIPS code
+"week": string // feature column for the week range
+"mask_user_pct": float // label column for the percentage of individuals who reported wearing masks
+"mask_mandate": string // feature column indicating the presence of a mask mandate
+"gop_vote_share_2016": float // feature column for GOP vote share in the 2016 presidential election
+"deaths_per_10k": float or null // feature column for deaths per 10,000 population
+"COVID_news": float // feature column for COVID-related news coverage percentage
+"retail_visit_per_hundred": float // feature column for retail visits per 100 people
+"COVID_news_cable": float // feature column for COVID-related cable news coverage
+"urban_population_percentage": float // feature column for urban population percentage in the county
+"image_users": integer // feature column for the number of image users
+"mask_users": integer // feature column for the number of mask users
+"population_density": float // feature column for the population density in the county
+"week_counter": integer // feature column for the week number counter
+"week_counter_log": float // feature column for the logarithmic transformation of the week counter
+"population": integer // feature column for the total population of the county
+
+DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
+"""
+
+prompt_template_advanced = """
+System role: You are a tabular synthetic data generation model.
+
+You are a synthetic data generator.
+Your goal is to produce data which mirrors the given examples in causal structure and feature and label distributions but also produce as diverse samples as possible.
+
+I will give you real examples first.
+
+Context: Leverage your knowledge about COVID-19 trends, social behavior, and population statistics to generate 1000 realistic but diverse samples.
+Output the data in a csv format where I can directly copy and paste into a csv.
+
+Example data: {data}
+
+The output should use the following schema:
+
+"state": string // feature column for the state name
+"county_fips": string // feature column for the county FIPS code
+"week": string // feature column for the week range
+"mask_user_pct": float // label column for the percentage of individuals who reported wearing masks
+"mask_mandate": string // feature column indicating the presence of a mask mandate
+"gop_vote_share_2016": float // feature column for GOP vote share in the 2016 presidential election
+"deaths_per_10k": float or null // feature column for deaths per 10,000 population
+"COVID_news": float // feature column for COVID-related news coverage percentage
+"retail_visit_per_hundred": float // feature column for retail visits per 100 people
+"COVID_news_cable": float // feature column for COVID-related cable news coverage
+"urban_population_percentage": float // feature column for urban population percentage in the county
+"image_users": integer // feature column for the number of image users
+"mask_users": integer // feature column for the number of mask users
+"population_density": float // feature column for the population density in the county
+"week_counter": integer // feature column for the week number counter
+"week_counter_log": float // feature column for the logarithmic transformation of the week counter
+"population": integer // feature column for the total population of the county
 
 DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
 """
@@ -72,7 +108,7 @@ DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples whic
 # Function to generate synthetic data using a model and prompt
 def generate_synthetic_data(model_name, data):
 
-    prompt = prompt_template.format(data = data)
+    prompt = prompt_template_baseline.format(data = data)
     
     try:
         # Create a chat completion using the Groq API

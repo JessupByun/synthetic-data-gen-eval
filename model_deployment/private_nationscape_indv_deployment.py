@@ -33,7 +33,7 @@ model_names = ["llama-3.1-70b-versatile"] #, "llama-3.1-8b-instant", "llama-3.2-
 
 # This prompt structure is adapted from the prompt example B.5. from the research paper: "Curated LLM: Synergy of LLMs and Data Curation for tabular augmentation in low-data regimes" (Seedatk, Huynh, et al.) https://arxiv.org/pdf/2312.12112 
 # The template is currently adapted to the 'insurance.csv' dataset (referenced in README.md)
-prompt_template = """
+prompt_template_baseline = """
 System role: You are a tabular synthetic data generation model.
 
 You are a synthetic data generator.
@@ -48,27 +48,60 @@ Example data: {data}
 
 The output should use the following schema:
 
-"response_id": string // A unique identifier for each respondent
-"start_date": string (ISO datetime format) // Timestamp when the response was recorded
-"state": string // U.S. state abbreviation
-"congress_district": string // Congressional district (state abbreviation + district number)
-"county": string or NA // County name (optional, may contain missing values)
-"age": integer // Age of the respondent
-"gender": string // Gender of the respondent (e.g., Male, Female, Non-Binary, etc.)
-"weight": float // A weighting factor for the response
-"extra_covid_worn_mask": string // Response to whether an extra mask was worn (e.g., Yes, No, Sometimes)
-"vote_2020": string or NA // Voting behavior in the 2020 election (e.g., Biden, Trump, NA for missing)
-"pid7": string // Seven-point political identification scale (e.g., Strong Republican, Lean Democrat)
-"date": string (ISO date format) // The date of the response
-"worn": boolean // Whether the respondent has worn a mask recently (TRUE/FALSE)
+"response_id": string // feature column for the unique identifier of each respondent
+"start_date": string // feature column for the timestamp when the response was recorded (ISO datetime format)
+"state": string // feature column for the U.S. state abbreviation of the respondent
+"congress_district": string // feature column for the congressional district (state abbreviation + district number)
+"county": string or null // feature column for the name of the county, nullable for missing values
+"age": integer // feature column for the age of the respondent
+"gender": string // feature column for the gender of the respondent
+"weight": float // feature column for a weighting factor associated with the response
+"extra_covid_worn_mask": string // feature column for the response to whether an extra mask was worn
+"vote_2020": string or null // feature column for the voting behavior in the 2020 election, nullable for missing values
+"pid7": string // feature column for the seven-point political identification scale
+"date": string // feature column for the date of the response (ISO date format)
+"worn": boolean // label column indicating whether the respondent has recently worn a mask (TRUE/FALSE)
 
 DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
 """
 
+prompt_template_advanced = """
+System role: You are a tabular synthetic data generation model.
+
+You are a synthetic data generator.
+Your goal is to produce data which mirrors the given examples in causal structure and feature and label distributions but also produce as diverse samples as possible.
+
+I will give you real examples first.
+
+Context: Leverage your knowledge about demographics, voting patterns, and health behaviors to generate 1000 realistic but diverse samples. 
+Output the data in a csv format where I can directly copy and paste into a csv.
+
+Example data: {data}
+
+The output should use the following schema:
+
+"response_id": string // feature column for the unique identifier of each respondent
+"start_date": string // feature column for the timestamp when the response was recorded (ISO datetime format)
+"state": string // feature column for the U.S. state abbreviation of the respondent
+"congress_district": string // feature column for the congressional district (state abbreviation + district number)
+"county": string or null // feature column for the name of the county, nullable for missing values
+"age": integer // feature column for the age of the respondent
+"gender": string // feature column for the gender of the respondent
+"weight": float // feature column for a weighting factor associated with the response
+"extra_covid_worn_mask": string // feature column for the response to whether an extra mask was worn
+"vote_2020": string or null // feature column for the voting behavior in the 2020 election, nullable for missing values
+"pid7": string // feature column for the seven-point political identification scale
+"date": string // feature column for the date of the response (ISO date format)
+"worn": boolean // label column indicating whether the respondent has recently worn a mask (TRUE/FALSE)
+
+DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
+"""
+
+
 # Function to generate synthetic data using a model and prompt
 def generate_synthetic_data(model_name, data):
 
-    prompt = prompt_template.format(data = data)
+    prompt = prompt_template_baseline.format(data = data)
     
     try:
         # Create a chat completion using the Groq API
