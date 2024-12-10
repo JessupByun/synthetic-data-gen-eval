@@ -63,7 +63,7 @@ labels = np.array(all_labels)
 
 # Run t-SNE on the combined data
 # Adjust parameters as needed
-tsne = TSNE(n_components=2, perplexity=15, random_state=42, max_iter=1000)
+tsne = TSNE(n_components=2, perplexity=25, random_state=42, max_iter=1000)
 X_embedded = tsne.fit_transform(X)
 
 # Define custom colors
@@ -83,10 +83,10 @@ for name, _ in sampled_datasets:
     # Set a larger size for Oracle and Train
     if name in ["Oracle", "Train"]:
         marker_size = 100
-        transparency = 1
+        transparency = 0.5
     else:
-        marker_size = 100
-        transparency = 0.3
+        marker_size = 50
+        transparency = 0.5
 
     plt.scatter(
         X_embedded[idx, 0], X_embedded[idx, 1],

@@ -73,34 +73,52 @@ Your goal is to produce data which mirrors the given examples in causal structur
 
 I will give you real examples first.
 
-Context: Leverage your knowledge about healthcare, demographics, and patient data to generate 1000 realistic but diverse samples. 
+Context: Leverage your knowledge about healthcare, demographics, and patient data to generate 1000 realistic but diverse samples.
 Output the data in a csv format where I can directly copy and paste into a csv.
 
 Example data: {data}
 
 The output should use the following schema:
 
-"subject_id_x": integer // feature column for the unique identifier of the patient
-"admittime_y": string // feature column for the admission time and date (ISO datetime format)
-"dischtime": string // feature column for the discharge time and date (ISO datetime format)
-"Age": integer // feature column for the age of the patient at the time of admission
-"gender": string // feature column for the gender of the patient
-"ethnicity": string // feature column for the reported ethnicity of the patient
-"insurance": string // feature column for the type of insurance coverage of the patient
-"label": integer // feature column indicating a binary outcome (e.g., event occurrence or not)
-"dod": string // feature column for the date of death (ISO datetime format)
-"charttime": string // feature column for the time and date of a lab or clinical chart event (ISO datetime format)
-"admittime_x": string // feature column for a secondary admission time used for lab-related calculations (ISO datetime format)
-"lab_time_from_admit": float // feature column for the time elapsed in hours from admission to lab measurement
-"valuenum": float // label column for the numerical result of a lab test or clinical measurement
+subject_id_x (integer): Unique identifier for the patient in the dataset.
+admittime_y (string, ISO datetime): The admission date and time for this particular hospitalization.
+dischtime (string, ISO datetime): The discharge date and time for this hospitalization.
+Age (integer): Age of the patient at the time of admission.
+gender (string): The patient's reported gender (e.g., "M" for male, "F" for female).
+ethnicity (string): The patient's reported ethnicity (e.g., "WHITE", "BLACK/AFRICAN AMERICAN", "HISPANIC/LATINO").
+insurance (string): The type of insurance coverage the patient had during the hospital stay (e.g., "Medicare", "Medicaid", "Other").
+label (integer): A binary outcome indicator, where 0 might represent no event of interest and 1 an event. In this sample, all are 0.
+dod (string, ISO datetime): Date of death. If "1970-01-01", it indicates no death recorded.
+charttime (string, ISO datetime): The date and time a particular lab test or clinical measurement was recorded.
+admittime_x (string, ISO datetime): Another admission timestamp used to calculate lab test timing.
+lab_time_from_admit (float): The elapsed time in hours from the admission to when the lab measurement was taken. Positive values indicate time after admission, negative values might indicate adjusted or pre-admission data entry times.
+valuenum (float): A numeric value representing a lab test result or clinical measurement result.
 
+Here are detailed summary stats that you should also use:
+
+,count,unique,top,freq,mean,std,min,25%,50%,75%,max
+subject_id_x,78723.0,,,,10020437.9889867,12041.026420660546,10000032.0,10010867.0,10019003.0,10032725.0,10040025.0
+admittime_y,78723,271,2140-01-23 16:19:00,2261,,,,,,,
+dischtime,78723,271,2140-02-26 18:15:00,2261,,,,,,,
+Age,78723.0,,,,61.13121959274926,13.56463866223975,21.0,53.0,63.0,69.0,91.0
+gender,78723,2,M,46614,,,,,,,
+ethnicity,78723,14,WHITE,51329,,,,,,,
+insurance,78723,3,Other,45624,,,,,,,
+label,78723.0,,,,0.13805368189728542,0.34495851112158016,0.0,0.0,0.0,0.0,1.0
+dod,78723,32,1970-01-01,40929,,,,,,,
+charttime,78723,5031,2115-11-08 13:00:00,57,,,,,,,
+admittime_x,78723,271,2140-01-23 16:19:00,2261,,,,,,,
+lab_time_from_admit,78723.0,,,,7693.055676231851,9077.037248347231,-1372.0,1032.0,4434.0,11067.5,62815.0
+valuenum,78723.0,,,,70.0171414580237,1015.2877738600624,-780.0,3.8,15.3,48.45,169000.0
+
+Make sure to provide many sample rows in your output
 DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
 """
 
 # Function to generate synthetic data using a model and prompt
 def generate_synthetic_data(model_name, data):
 
-    prompt = prompt_template_baseline.format(data = data)
+    prompt = prompt_template_advanced.format(data = data)
     
     try:
         # Create a chat completion using the Groq API

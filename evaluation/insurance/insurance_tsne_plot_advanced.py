@@ -59,7 +59,7 @@ X = np.vstack(all_data)
 labels = np.array(all_labels)
 
 # Run t-SNE on the combined data
-tsne = TSNE(n_components=2, perplexity=20, random_state=42, max_iter=1000)
+tsne = TSNE(n_components=2, perplexity=15, random_state=42, max_iter=1000)
 X_embedded = tsne.fit_transform(X)
 
 # Define custom colors

@@ -29,7 +29,7 @@ api_key = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=api_key)
 
 # List of model ID names that will be deployed. Visit groq API documentation for more models
-model_names = ["mixtral-8x7b-32768"] #, "llama-3.1-8b-instant", "llama-3.2-1b-preview"] mixtral-8x7b-32768 llama-3.1-70b-versatile
+model_names = ["llama-3.1-70b-versatile"] #, "llama-3.1-8b-instant", "llama-3.2-1b-preview"] mixtral-8x7b-32768 llama-3.1-70b-versatile
 
 # This prompt structure is adapted from the prompt example B.5. from the research paper: "Curated LLM: Synergy of LLMs and Data Curation for tabular augmentation in low-data regimes" (Seedatk, Huynh, et al.) https://arxiv.org/pdf/2312.12112 
 # The template is currently adapted to the 'insurance.csv' dataset (referenced in README.md)
@@ -99,7 +99,7 @@ DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples whic
 # Function to generate synthetic data using a model and prompt
 def generate_synthetic_data(model_name, data):
 
-    prompt = prompt_template_baseline.format(data = data)
+    prompt = prompt_template_advanced.format(data = data)
     
     try:
         # Create a chat completion using the Groq API

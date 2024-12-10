@@ -29,7 +29,7 @@ api_key = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=api_key)
 
 # List of model ID names that will be deployed. Visit groq API documentation for more models
-model_names = ["mixtral-8x7b-32768"] #, "llama-3.1-8b-instant", "llama-3.2-1b-preview"] mixtral-8x7b-32768	llama-3.1-70b-versatile
+model_names = ["llama-3.1-70b-versatile"] #, "llama-3.1-8b-instant", "llama-3.2-1b-preview"] mixtral-8x7b-32768	llama-3.1-70b-versatile
 
 # This prompt structure is adapted from the prompt example B.5. from the research paper: "Curated LLM: Synergy of LLMs and Data Curation for tabular augmentation in low-data regimes" (Seedatk, Huynh, et al.) https://arxiv.org/pdf/2312.12112 
 # The template is currently adapted to the 'insurance.csv' dataset (referenced in README.md)
@@ -54,7 +54,7 @@ The output should use the following schema:
 "mask_user_pct": float // label column for the percentage of individuals who reported wearing masks
 "mask_mandate": string // feature column indicating the presence of a mask mandate
 "gop_vote_share_2016": float // feature column for GOP vote share in the 2016 presidential election
-"deaths_per_10k": float or null // feature column for deaths per 10,000 population
+"deaths_per_10k": float // feature column for deaths per 10,000 population
 "COVID_news": float // feature column for COVID-related news coverage percentage
 "retail_visit_per_hundred": float // feature column for retail visits per 100 people
 "COVID_news_cable": float // feature column for COVID-related cable news coverage
@@ -84,31 +84,53 @@ Example data: {data}
 
 The output should use the following schema:
 
-"state": string // feature column for the state name
-"county_fips": string // feature column for the county FIPS code
-"week": string // feature column for the week range
-"mask_user_pct": float // label column for the percentage of individuals who reported wearing masks
-"mask_mandate": string // feature column indicating the presence of a mask mandate
-"gop_vote_share_2016": float // feature column for GOP vote share in the 2016 presidential election
-"deaths_per_10k": float or null // feature column for deaths per 10,000 population
-"COVID_news": float // feature column for COVID-related news coverage percentage
-"retail_visit_per_hundred": float // feature column for retail visits per 100 people
-"COVID_news_cable": float // feature column for COVID-related cable news coverage
-"urban_population_percentage": float // feature column for urban population percentage in the county
-"image_users": integer // feature column for the number of image users
-"mask_users": integer // feature column for the number of mask users
-"population_density": float // feature column for the population density in the county
-"week_counter": integer // feature column for the week number counter
-"week_counter_log": float // feature column for the logarithmic transformation of the week counter
-"population": integer // feature column for the total population of the county
+"state": string, // The name of the state (e.g., "South Carolina", "Tennessee", "Texas")
+"county_fips": string, // A unique Federal Information Processing Standards (FIPS) code for identifying counties
+"week": string, // A date range representing the week of the data collection (e.g., "2020-03-01 to 2020-03-07")
+"mask_user_pct": float, // The percentage of individuals who reported wearing masks (e.g., 0.021978021978022 for ~2.2%)
+"mask_mandate": string, // Indicates whether a mask mandate was in effect during the week (e.g., "Yes" or "No")
+"gop_vote_share_2016": float, // The percentage of votes for the GOP in the 2016 presidential election (e.g., 75.1239282930949)
+"deaths_per_10k": float, // The number of deaths per 10,000 population (nullable if no data available, e.g., NA)
+"COVID_news": float, // The percentage of news coverage related to COVID (e.g., 0.909090909090909 for ~90.9%)
+"retail_visit_per_hundred": float, // The number of retail visits per 100 people during the week (e.g., 7.20813137783671)
+"COVID_news_cable": float, // The percentage of COVID-related news coverage on cable (e.g., 0.733788395904437 for ~73.4%)
+"urban_population_percentage": float, // The percentage of the county's population living in urban areas (e.g., 57.72)
+"image_users": integer, // The number of individuals who reported using images (e.g., 91)
+"mask_users": integer, // The number of individuals who reported wearing masks (e.g., 2)
+"population_density": float, // The number of people per square kilometer in the county (e.g., 114.6)
+"week_counter": integer, // A counter for the week of the data collection starting from the beginning of the dataset (e.g., 1 for the first week)
+"week_counter_log": float, // The natural logarithm of the week counter (e.g., 0 for the first week)
+"population": integer // The total population of the county (e.g., 223234)
 
+Here are detailed summary stats that you should also use:
+
+,count,unique,top,freq,mean,std,min,25%,50%,75%,max
+state,1000,51,Texas,82,,,,,,,
+county_fips,1000.0,,,,29776.997,15305.551067651091,1001.0,17174.5,29188.0,42077.5,56025.0
+week,1000,1,2020-03-01 to 2020-03-07,1000,,,,,,,
+mask_user_pct,1000.0,,,,0.0067148971469983346,0.02105480508882924,0.0,0.0,0.0,0.00570613796849535,0.25
+mask_mandate,1000,1,No,1000,,,,,,,
+gop_vote_share_2016,1000.0,,,,57.76275342168695,16.54842015333003,4.25092723418831,46.87923096296142,60.23043821377465,70.28178963555294,88.1581542102099
+deaths_per_10k,1000.0,,,,4.4389559220554e-06,0.0001403721114678792,0.0,0.0,0.0,0.0,0.0044389559220554
+COVID_news,1000.0,,,,0.9090909090909087,2.221557105636704e-16,0.909090909090909,0.909090909090909,0.909090909090909,0.909090909090909,0.909090909090909
+retail_visit_per_hundred,1000.0,,,,3.3130938332612225,1.3459059739094994,0.183075671277461,2.324550468959615,3.133195543348025,4.12506936985241,10.4522542705125
+COVID_news_cable,1000.0,,,,0.733788395904437,0.0,0.733788395904437,0.733788395904437,0.733788395904437,0.733788395904437,0.733788395904437
+urban_population_percentage,1000.0,,,,69.83181,22.611077591608804,0.0,54.5975,73.14500000000001,88.52250000000001,100.0
+image_users,1000.0,,,,221.87,713.4801279594218,1.0,17.0,50.0,151.0,15858.0
+mask_users,1000.0,,,,1.31,5.098224386185047,0.0,0.0,0.0,1.0,112.0
+population_density,1000.0,,,,677.4635,2984.2510965240267,0.1,74.6,186.8,445.47499999999997,69468.4
+week_counter,1000.0,,,,1.0,0.0,1.0,1.0,1.0,1.0,1.0
+week_counter_log,1000.0,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+population,1000.0,,,,278368.398,551331.1948751368,3464.0,55244.75,120951.5,276909.0,10039107.0
+
+Make sure to provide many sample rows in your output
 DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
 """
 
 # Function to generate synthetic data using a model and prompt
 def generate_synthetic_data(model_name, data):
 
-    prompt = prompt_template_baseline.format(data = data)
+    prompt = prompt_template_advanced.format(data = data)
     
     try:
         # Create a chat completion using the Groq API

@@ -1,0 +1,156 @@
+Column,Metric,Score
+state,TVComplement,0.6373874173873864
+county_fips,TVComplement,0.010000504899737805
+week,TVComplement,0.4504504554504505
+mask_user_pct,KSComplement,0.0
+mask_mandate,TVComplement,0.8558558608558559
+gop_vote_share_2016,KSComplement,0.5061711711711712
+deaths_per_10k,KSComplement,0.4504504504504504
+COVID_news,KSComplement,0.0
+retail_visit_per_hundred,KSComplement,0.6560810810810811
+COVID_news_cable,KSComplement,0.009009009009009028
+urban_population_percentage,KSComplement,0.49626126126126124
+image_users,KSComplement,0.36018018018018017
+mask_users,KSComplement,0.1711711711711712
+population_density,KSComplement,0.8833783783783784
+week_counter,KSComplement,1.0
+week_counter_log,KSComplement,1.0
+population,KSComplement,0.8882432432432432
+All,Average Shape,0.49262589320819855
+state and county_fips,ContingencySimilarity,0.010000000000000009
+state and week,ContingencySimilarity,0.3572972972972973
+state and mask_user_pct,ContingencySimilarity,0.014009009009009254
+state and mask_mandate,ContingencySimilarity,0.5694144144144144
+state and gop_vote_share_2016,ContingencySimilarity,0.202072072072072
+state and deaths_per_10k,ContingencySimilarity,0.0
+state and COVID_news,ContingencySimilarity,2.220446049250313e-16
+state and retail_visit_per_hundred,ContingencySimilarity,0.26112612612612596
+state and COVID_news_cable,ContingencySimilarity,2.220446049250313e-16
+state and urban_population_percentage,ContingencySimilarity,0.20608108108108114
+state and image_users,ContingencySimilarity,0.37725225225225223
+state and mask_users,ContingencySimilarity,0.10108108108108105
+state and population_density,ContingencySimilarity,0.5382882882882882
+state and week_counter,ContingencySimilarity,0.6373873873873874
+state and week_counter_log,ContingencySimilarity,0.6373873873873874
+state and population,ContingencySimilarity,0.2671621621621624
+county_fips and week,ContingencySimilarity,0.0050000000000001155
+county_fips and mask_user_pct,ContingencySimilarity,1.1102230246251565e-16
+county_fips and mask_mandate,ContingencySimilarity,0.010000000000000009
+county_fips and gop_vote_share_2016,ContingencySimilarity,1.1102230246251565e-16
+county_fips and deaths_per_10k,ContingencySimilarity,0.0
+county_fips and COVID_news,ContingencySimilarity,1.1102230246251565e-16
+county_fips and retail_visit_per_hundred,ContingencySimilarity,1.1102230246251565e-16
+county_fips and COVID_news_cable,ContingencySimilarity,1.1102230246251565e-16
+county_fips and urban_population_percentage,ContingencySimilarity,0.0
+county_fips and image_users,ContingencySimilarity,0.01000000000000012
+county_fips and mask_users,ContingencySimilarity,1.1102230246251565e-16
+county_fips and population_density,ContingencySimilarity,0.010000000000000009
+county_fips and week_counter,ContingencySimilarity,0.010000000000000009
+county_fips and week_counter_log,ContingencySimilarity,0.010000000000000009
+county_fips and population,ContingencySimilarity,1.1102230246251565e-16
+week and mask_user_pct,ContingencySimilarity,0.027027027027026973
+week and mask_mandate,ContingencySimilarity,0.3063063063063063
+week and gop_vote_share_2016,ContingencySimilarity,0.40234234234234234
+week and deaths_per_10k,ContingencySimilarity,1.1102230246251565e-16
+week and COVID_news,ContingencySimilarity,0.0
+week and retail_visit_per_hundred,ContingencySimilarity,0.4464414414414415
+week and COVID_news_cable,ContingencySimilarity,0.0
+week and urban_population_percentage,ContingencySimilarity,0.4083783783783782
+week and image_users,ContingencySimilarity,0.4294144144144144
+week and mask_users,ContingencySimilarity,0.036036036036036
+week and population_density,ContingencySimilarity,0.39837837837837853
+week and week_counter,ContingencySimilarity,0.4504504504504505
+week and week_counter_log,ContingencySimilarity,0.4504504504504505
+week and population,ContingencySimilarity,0.3833333333333334
+mask_user_pct and mask_mandate,ContingencySimilarity,0.03603603603603622
+mask_user_pct and gop_vote_share_2016,CorrelationSimilarity,
+mask_user_pct and deaths_per_10k,CorrelationSimilarity,
+mask_user_pct and COVID_news,CorrelationSimilarity,
+mask_user_pct and retail_visit_per_hundred,CorrelationSimilarity,
+mask_user_pct and COVID_news_cable,CorrelationSimilarity,
+mask_user_pct and urban_population_percentage,CorrelationSimilarity,
+mask_user_pct and image_users,CorrelationSimilarity,
+mask_user_pct and mask_users,CorrelationSimilarity,
+mask_user_pct and population_density,CorrelationSimilarity,
+mask_user_pct and week_counter,CorrelationSimilarity,
+mask_user_pct and week_counter_log,CorrelationSimilarity,
+mask_user_pct and population,CorrelationSimilarity,
+mask_mandate and gop_vote_share_2016,ContingencySimilarity,0.6395045045045045
+mask_mandate and deaths_per_10k,ContingencySimilarity,0.0
+mask_mandate and COVID_news,ContingencySimilarity,0.0
+mask_mandate and retail_visit_per_hundred,ContingencySimilarity,0.6022072072072072
+mask_mandate and COVID_news_cable,ContingencySimilarity,1.1102230246251565e-16
+mask_mandate and urban_population_percentage,ContingencySimilarity,0.5783333333333334
+mask_mandate and image_users,ContingencySimilarity,0.8254954954954955
+mask_mandate and mask_users,ContingencySimilarity,0.1351351351351351
+mask_mandate and population_density,ContingencySimilarity,0.7647297297297297
+mask_mandate and week_counter,ContingencySimilarity,0.8558558558558559
+mask_mandate and week_counter_log,ContingencySimilarity,0.8558558558558559
+mask_mandate and population,ContingencySimilarity,0.47121621621621634
+gop_vote_share_2016 and deaths_per_10k,CorrelationSimilarity,
+gop_vote_share_2016 and COVID_news,CorrelationSimilarity,
+gop_vote_share_2016 and retail_visit_per_hundred,CorrelationSimilarity,0.8739758048877823
+gop_vote_share_2016 and COVID_news_cable,CorrelationSimilarity,
+gop_vote_share_2016 and urban_population_percentage,CorrelationSimilarity,0.8761594617800009
+gop_vote_share_2016 and image_users,CorrelationSimilarity,0.9652880072763262
+gop_vote_share_2016 and mask_users,CorrelationSimilarity,
+gop_vote_share_2016 and population_density,CorrelationSimilarity,0.8998258245967822
+gop_vote_share_2016 and week_counter,CorrelationSimilarity,
+gop_vote_share_2016 and week_counter_log,CorrelationSimilarity,
+gop_vote_share_2016 and population,CorrelationSimilarity,0.9373202521942023
+deaths_per_10k and COVID_news,CorrelationSimilarity,
+deaths_per_10k and retail_visit_per_hundred,CorrelationSimilarity,
+deaths_per_10k and COVID_news_cable,CorrelationSimilarity,
+deaths_per_10k and urban_population_percentage,CorrelationSimilarity,
+deaths_per_10k and image_users,CorrelationSimilarity,
+deaths_per_10k and mask_users,CorrelationSimilarity,
+deaths_per_10k and population_density,CorrelationSimilarity,
+deaths_per_10k and week_counter,CorrelationSimilarity,
+deaths_per_10k and week_counter_log,CorrelationSimilarity,
+deaths_per_10k and population,CorrelationSimilarity,
+COVID_news and retail_visit_per_hundred,CorrelationSimilarity,
+COVID_news and COVID_news_cable,CorrelationSimilarity,
+COVID_news and urban_population_percentage,CorrelationSimilarity,
+COVID_news and image_users,CorrelationSimilarity,
+COVID_news and mask_users,CorrelationSimilarity,
+COVID_news and population_density,CorrelationSimilarity,
+COVID_news and week_counter,CorrelationSimilarity,
+COVID_news and week_counter_log,CorrelationSimilarity,
+COVID_news and population,CorrelationSimilarity,
+retail_visit_per_hundred and COVID_news_cable,CorrelationSimilarity,
+retail_visit_per_hundred and urban_population_percentage,CorrelationSimilarity,0.9756136779886765
+retail_visit_per_hundred and image_users,CorrelationSimilarity,0.9022764985418846
+retail_visit_per_hundred and mask_users,CorrelationSimilarity,
+retail_visit_per_hundred and population_density,CorrelationSimilarity,0.9310423548295206
+retail_visit_per_hundred and week_counter,CorrelationSimilarity,
+retail_visit_per_hundred and week_counter_log,CorrelationSimilarity,
+retail_visit_per_hundred and population,CorrelationSimilarity,0.8673100792341301
+COVID_news_cable and urban_population_percentage,CorrelationSimilarity,
+COVID_news_cable and image_users,CorrelationSimilarity,
+COVID_news_cable and mask_users,CorrelationSimilarity,
+COVID_news_cable and population_density,CorrelationSimilarity,
+COVID_news_cable and week_counter,CorrelationSimilarity,
+COVID_news_cable and week_counter_log,CorrelationSimilarity,
+COVID_news_cable and population,CorrelationSimilarity,
+urban_population_percentage and image_users,CorrelationSimilarity,0.981324040479315
+urban_population_percentage and mask_users,CorrelationSimilarity,
+urban_population_percentage and population_density,CorrelationSimilarity,0.9844861944261069
+urban_population_percentage and week_counter,CorrelationSimilarity,
+urban_population_percentage and week_counter_log,CorrelationSimilarity,
+urban_population_percentage and population,CorrelationSimilarity,0.9372292605656052
+image_users and mask_users,CorrelationSimilarity,
+image_users and population_density,CorrelationSimilarity,0.9877808066426165
+image_users and week_counter,CorrelationSimilarity,
+image_users and week_counter_log,CorrelationSimilarity,
+image_users and population,CorrelationSimilarity,0.9425743103964169
+mask_users and population_density,CorrelationSimilarity,
+mask_users and week_counter,CorrelationSimilarity,
+mask_users and week_counter_log,CorrelationSimilarity,
+mask_users and population,CorrelationSimilarity,
+population_density and week_counter,CorrelationSimilarity,
+population_density and week_counter_log,CorrelationSimilarity,
+population_density and population,CorrelationSimilarity,0.9296324366753269
+week_counter and week_counter_log,CorrelationSimilarity,
+week_counter and population,CorrelationSimilarity,
+week_counter_log and population,CorrelationSimilarity,
+All Pairs,Average Corr Similarity,0.3798400753013861

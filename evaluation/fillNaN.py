@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Load the dataset
-file_path = "data/real_data/private_nationscape_indv/private_nationscape_indv_df.csv"  # Replace with your dataset's file path
-output_file = "data/real_data/private_nationscape_indv/private_nationscape_indv_df.csv"  # Replace with your desired output file name
+file_path = "data/synthetic_data/private_combined_df_cty_week2/combined_df_cty_week2_synthetic_data_mixtral_n200_temp1.0_advanced_prompt.csv"  # Replace with your dataset's file path
+output_file = "data/synthetic_data/private_combined_df_cty_week2/combined_df_cty_week2_synthetic_data_mixtral_n200_temp1.0_advanced_prompt.csv"  # Replace with your desired output file name
 
 # Read the dataset
 df = pd.read_csv(file_path)
