@@ -1,251 +1,251 @@
 "response_id","start_date","state","congress_district","county","age","gender","weight","extra_covid_worn_mask","vote_2020","pid7","date","worn"
-"6408123","2020-10-10 14:30:45","Texas","TX27","157","35","Male",0.87,"False",0.7,"Lean Democrat","2020-10-10",True
-"6408214","2020-10-14 18:15:10","Illinois","IL14","177","42","Female",1.03,"True",0.9,"Strong Democrat","2020-10-14",False
-"6408321","2020-10-16 19:31:05","Georgia","GA04","41","61","Male",1.08,"False",0.3,"Lean Republican","2020-10-16",True
-"6408415","2020-10-18 12:42:40","Pennsylvania","PA05","101","58","Female",0.92,"True",0.85,"Strong Democrat","2020-10-18",False
-"6408528","2020-10-19 10:51:35","Ohio","OH10","173","49","Male",1.06,"False",0.48,"Lean Democrat","2020-10-19",True
-"6408611","2020-10-20 15:39:45","North Carolina","NC11","147","39","Female",0.89,"True",0.98,"Strong Democrat","2020-10-20",False
-"6408715","2020-10-22 17:17:00","Florida","FL23","81","51","Male",1.05,"False",0.6,"Lean Republican","2020-10-22",True
-"6408832","2020-10-24 14:31:10","Michigan","MI11","193","55","Female",1.07,"True",0.95,"Strong Democrat","2020-10-24",False
-"6408958","2020-10-25 11:43:40","California","CA42","113","44","Male",1.04,"False",0.75,"Lean Democrat","2020-10-25",True
-"6409061","2020-10-27 19:51:35","New York","NY22","27","34","Female",0.94,"True",0.92,"Strong Democrat","2020-10-27",False
-"6400700","2020-10-02 10:24:37","Georgia","GA-01",89,35,"Female",1.23,"Never worn an extra mask",0.8,"Strong Democrat","2020-10-02",TRUE
-"6400701","2020-08-15 14:56:17","California","CA-05",43,51,"Male",0.95,"Almost always worn an extra mask",0.1,"Lean Republican","2020-08-15",FALSE
-"6400702","2020-09-29 12:03:11","New Jersey","NJ-06",22,41,"Female",1.65,"Most of the time worn an extra mask",0.4,"Weak Democrat","2020-09-29",TRUE
-"6400703","2020-11-04 18:31:58","South Carolina","SC-02",59,28,"Male",0.76,"Frequently worn an extra mask",0.6,"Strong Republican","2020-11-04",FALSE
-"6400704","2020-10-26 19:49:31","Pennsylvania","PA-10",30,49,"Female",1.31,"Occasionally worn an extra mask",0.4,"Lean Democrat","2020-10-26",TRUE
-"6400705","2020-07-23 10:48:17","Texas","TX-19",117,52,"Male",1.56,"Never worn an extra mask",0.8,"Independent","2020-07-23",FALSE
-"6400706","2020-08-13 00:08:18","Illinois","IL-04",93,32,"Female",1.36,"Most of the time worn an extra mask",0.3,"Weak Democrat","2020-08-13",TRUE
-"6400707","2020-11-27 09:49:43","Minnesota","MN-07",77,39,"Male",1.56,"Frequently worn an extra mask",0.5,"Strong Democrat","2020-11-27",TRUE
-"6400708","2020-06-12 16:16:14","Arizona","AZ-06",10,48,"Female",1.3,"Almost always worn an extra mask",0.5,"Lean Republican","2020-06-12",FALSE
-"6400709","2020-09-18 00:05:54","Tennessee","TN-09",31,53,"Male",0.7,"Never worn an extra mask",0.7,"Strong Republican","2020-09-18",FALSE
-"6400710","2020-12-28 13:10:36","New York","NY-11",38,46,"Female",0.9,"Occasionally worn an extra mask",0.4,"Weak Democrat","2020-12-28",TRUE
-"6400711","2020-08-24 11:56:43","Oregon","OR-04",36,35,"Male",1.33,"Frequently worn an extra mask",0.3,"Lean Democrat","2020-08-24",TRUE
-"6400712","2020-10-14 10:58:26","Florida","FL-10",44,52,"Female",1.6,"Most of the time worn an extra mask",0.5,"Strong Democrat","2020-10-14",TRUE
-"6400713","2020-09-20 21:56:08","Virginia","VA-06",42,40,"Male",0.76,"Almost always worn an extra mask",0.4,"Lean Republican","2020-09-20",FALSE
-"6400714","2020-11-01 23:18:50","Utah","UT-03",51,43,"Female",0.92,"Frequently worn an extra mask",0.4,"Strong Republican","2020-11-01",TRUE
-"6400715","2020-05-19 16:38:12","Georgia","GA-14",127,32,"Male",0.75,"Never worn an extra mask",0.6,"Strong Republican","2020-05-19",FALSE
-"6400716","2020-11-26 11:10:42","New Jersey","NJ-08",35,51,"Female",0.94,"Most of the time worn an extra mask",0.3,"Weak Democrat","2020-11-26",TRUE
-"6400717","2020-09-17 06:46:26","Texas","TX-22",90,43,"Male",1.23,"Frequently worn an extra mask",0.4,"Strong Democrat","2020-09-17",TRUE
-"6400718","2020-10-18 09:54:51","Pennsylvania","PA-16",22,46,"Female",1.58,"Almost always worn an extra mask",0.3,"Lean Democrat","2020-10-18",TRUE
-"1445678","2020-08-20 12:10:45","CA","CA11","Alameda",35,"Female",1.5,"Yes","Joe Biden","Strong Democrat","2020-08-20",TRUE
-"2516359","2020-05-29 11:21:14","FL","FL07","Brevard",42,"Male",0.8,"No","Donald Trump","Lean Republican","2020-05-29",FALSE
-"1743261","2021-02-05 14:44:01","TX","TX30","Dallas",58,"Male",2.2,"Yes","Joe Biden","Weak Democrat","2021-02-05",TRUE
-"4321057","2020-07-20 09:07:38","NY","NY14","Kings",49,"Female",1.1,"No","Joe Biden","Strong Democrat","2020-07-20",TRUE
-"1914349","2020-11-22 18:41:56","GA","GA06","Cobb",28,"Male",0.6,"Yes","Donald Trump","Lean Republican","2020-11-22",FALSE
-"6528121","2020-04-19 10:37:25","IL","IL08","Cook",39,"Female",1.3,"No","Joe Biden","Weak Democrat","2020-04-19",TRUE
-"3514789","2020-10-15 15:05:51","NC","NC11","Mecklenburg",55,"Male",2.4,"Yes","Donald Trump","Strong Republican","2020-10-15",FALSE
-"4759821","2020-08-28 13:51:46","AZ","AZ05","Maricopa",32,"Female",1.6,"Yes","Joe Biden","Lean Democrat","2020-08-28",TRUE
-"1987431","2021-03-01 11:28:42","OR","OR03","Multnomah",26,"Male",0.4,"Yes","Joe Biden","Strong Democrat","2021-03-01",TRUE
-"2146758","2020-06-01 11:58:17","MI","MI08","Oakland",46,"Female",1.8,"No","Donald Trump","Lean Republican","2020-06-01",FALSE
-"6512318","2020-08-04 12:15:32","CO","CO07","Adams",40,"Male",1.2,"No","Joe Biden","Weak Democrat","2020-08-04",TRUE
-"1734657","2020-11-10 18:03:56","OH","OH16","Cuyahoga",21,"Female",0.2,"No","Joe Biden","Lean Democrat","2020-11-10",TRUE
-"2113980","2020-09-05 08:49:04","TN","TN07","Davidson",38,"Male",1.4,"No","Donald Trump","Strong Republican","2020-09-05",FALSE
-"4832102","2021-02-16 14:08:25","MN","MN05","Hennepin",34,"Female",1.9,"Yes","Joe Biden","Strong Democrat","2021-02-16",TRUE
-"2728495","2020-06-21 09:24:07","PA","PA16","York",25,"Male",0.3,"Yes","Donald Trump","Lean Republican","2020-06-21",FALSE
-"1926473","2020-11-29 12:07:54","MO","MO07","Jasper",56,"Female",2.3,"No","Joe Biden","Weak Democrat","2020-11-29",TRUE
-"4618224","2021-01-10 10:22:18","IN","IN10","Marion",45,"Male",1.1,"No","Donald Trump","Strong Republican","2021-01-10",FALSE
-"6521842","2020-09-27 14:05:32","VA","VA11","Fairfax",52,"Female",2.6,"Yes","Joe Biden","Strong Democrat","2020-09-27",TRUE
-"2937845","2020-07-26 13:18:07","NJ","NJ05","Middlesex",36,"Male",1.3,"Yes","Joe Biden","Weak Democrat","2020-07-26",TRUE
-"4213917","2020-10-30 16:04:43","AL","AL07","Mobile",24,"Female",0.9,"No","Donald Trump","Strong Republican","2020-10-30",FALSE
-"2827519","2021-02-02 15:51:52","AR","AR04","Pulaski",41,"Male",1.7,"No","Joe Biden","Weak Democrat","2021-02-02",TRUE
-"1846238","2020-06-14 13:17:09","GA","GA05","DeKalb",29,"Female",0.8,"Yes","Joe Biden","Strong Democrat","2020-06-14",TRUE
-"6412589","2020-04-23 10:43:41","MA","MA06","Essex",44,"Male",2.1,"No","Joe Biden","Strong Democrat","2020-04-23",TRUE
-"4651817","2021-03-15 11:38:06","LA","LA06","Orleans",48,"Female",1.6,"Yes","Donald Trump","Lean Republican","2021-03-15",FALSE
-"4982721","2020-07-15 15:39:01","MS","MS02","Hinds",27,"Male",0.7,"No","Donald Trump","Strong Republican","2020-07-15",FALSE
-"6421031","2021-01-24 10:16:44","SC","SC06","Charleston",33,"Female",1.4,"No","Joe Biden","Lean Democrat","2021-01-24",TRUE
-"2849214","2020-10-20 14:39:55","WI","WI07","Dane",23,"Male",0.5,"No","Joe Biden","Weak Democrat","2020-10-20",TRUE
-"4123417","2021-01-05 09:26:29","WA","WA09","Snohomish",39,"Female",1.5,"Yes","Joe Biden","Strong Democrat","2021-01-05",TRUE
-"6327895","2020-08-11 10:59:28","UT","UT03","Salt Lake",42,"Male",2.2,"No","Donald Trump","Strong Republican","2020-08-11",FALSE
-"2493786","2020-06-27 10:20:48","NM","NM03","Bernalillo",32,"Female",1.1,"Yes","Joe Biden","Weak Democrat","2020-06-27",TRUE
-"1512369","2020-09-03 15:54:51","NH","NH02","Merrimack",35,"Male",1.2,"No","Joe Biden","Lean Democrat","2020-09-03",TRUE
-"2138748","2020-06-28 09:18:51","MT","MT02","Flathead",29,"Male",0.6,"No","Donald Trump","Strong Republican","2020-06-28",FALSE
-"2824216","2021-03-22 13:03:34","MD","MD05","Prince George's",51,"Female",2.2,"Yes","Joe Biden","Strong Democrat","2021-03-22",TRUE
-"4132111","2020-08-05 09:57:44","Massachusetts","MA01",0,59,"Female",1.2319053,"True",4,"Lean Democrat","2020-08-05",True
-"7302110","2020-11-09 10:48:34","Oregon","OR05",0,26,"Male",1.4551157,"False",2,"Weak Republican","2020-11-09",False
-"3411908","2020-08-13 20:19:25","Tennessee","TN05",0,62,"Female",0.9823819,"True",1,"Strong Democrat","2020-08-13",True
-"4619102","2020-07-15 18:47:49","Missouri","MO03",0,41,"Male",1.1812347,"False",3,"Independent","2020-07-15",True
-"1304828","2020-09-21 02:34:12","New Hampshire","NH02",0,38,"Female",1.2354823,"True",1,"Strong Democrat","2020-09-21",True
-"6702719","2020-09-17 15:44:17","Nebraska","NE01",0,55,"Male",1.1022192,"False",2,"Weak Republican","2020-09-17",False
-"5101398","2020-08-28 15:51:58","Kentucky","KY03",0,28,"Female",0.9808217,"True",4,"Lean Democrat","2020-08-28",True
-"8801399","2020-12-01 02:03:16","Montana","MT01",0,64,"Male",1.1904789,"False",1,"Strong Democrat","2020-12-01",False
-"3408199","2020-07-11 09:08:15","Maine","ME02",0,29,"Female",1.2118594,"True",2,"Weak Republican","2020-07-11",True
-"9502909","2020-09-08 21:55:32","Rhode Island","RI01",0,45,"Male",1.0119955,"False",1,"Strong Democrat","2020-09-08",False
-"9900299","2020-08-31 15:05:31","Iowa","IA04",0,52,"Female",0.9856219,"True",3,"Independent","2020-08-31",False
-"7101928","2020-08-20 02:40:52","Connecticut","CT05",0,25,"Male",1.2304102,"False",2,"Weak Republican","2020-08-20",True
-"2304309","2020-08-10 09:45:27","Alabama","AL05",0,59,"Female",1.0354127,"True",1,"Strong Democrat","2020-08-10",True
-"1410408","2020-08-21 11:41:58","Arizona","AZ02",0,39,"Male",1.2583451,"False",4,"Lean Democrat","2020-08-21",False
-"4105108","2020-10-26 21:37:59","North Dakota","ND01",0,66,"Female",0.9912417,"True",2,"Weak Republican","2020-10-26",True
-"1311219","2020-07-25 11:53:53","Oklahoma","OK02",0,27,"Male",1.2356341,"False",3,"Independent","2020-07-25",True
-"3812308","2020-09-11 17:26:44","Arkansas","AR03",0,52,"Female",0.9625123,"True",1,"Strong Democrat","2020-09-11",True
-"2412499","2020-07-15 05:19:24","Michigan","MI09",0,49,"Male",1.2218297,"False",2,"Weak Republican","2020-07-15",False
-"6311399","2020-09-14 23:23:03","North Carolina","NC08",0,36,"Female",0.9963928,"True",4,"Lean Democrat","2020-09-14",False
-"8113909","2020-08-07 11:38:02","Colorado","CO04",0,61,"Male",1.2509101,"False",1,"Strong Democrat","2020-08-07",False
-"8612719","2020-10-25 05:26:49","Vermont","VT01",0,55,"Female",1.1817453,"True",2,"Weak Republican","2020-10-25",True
-"1313509","2020-10-01 18:25:16","West Virginia","WV03",0,31,"Male",1.1611796,"False",3,"Independent","2020-10-01",False
-"4510998","2020-09-24 03:30:50","Wisconsin","WI07",0,50,"Female",1.2034398,"True",1,"Strong Democrat","2020-09-24",True
-"3711119","2020-07-14 17:48:49","South Carolina","SC04",0,46,"Male",1.1548297,"False",2,"Weak Republican","2020-07-14",False
-"4212108","2020-09-03 15:23:02","Kansas","KS01",0,60,"Female",1.0112596,"True",4,"Lean Democrat","2020-09-03",True
-"2403208","2020-09-17 00:24:18","Idaho","ID02",0,54,"Male",0.9819395,"False",1,"Strong Democrat","2020-09-17",False
-"9102110","2020-08-24 16:14:09","Utah","UT03",0,49,"Female",0.9875102,"True",3,"Independent","2020-08-24",True
-"5000820","2020-11-07 09:45:13","Louisiana","LA03",0,35,"Male",1.2494295,"False",2,"Weak Republican","2020-11-07",False
-"6301398","2020-07-20 00:00:03","South Dakota","SD01",0,41,"Female",1.0341918,"True",4,"Lean Democrat","2020-07-20",False
-"3805209","2020-09-15 10:55:52","Delaware","DE01",0,47,"Male",1.2502139,"False",1,"Strong Democrat","2020-09-15",False
-"2010112","2020-10-08 14:10:43","West Virginia","WV01",23.3,42,"Male",0.85,"Sometimes",0.5,"Lean Democrat","2020-10-08",TRUE
-"984723","2020-06-12 12:45:10","New Jersey","NJ05",2.9,78,"Female",0.32,"Everyday",1.2,"Strong Democrat","2020-06-12",TRUE
-"145697","2020-11-03 11:25:17","Minnesota","MN08",17.4,22,"Female",0.56,"Rarely",0.1,"Strong Republican","2020-11-03",FALSE
-"819834","2020-05-30 19:58:40","North Dakota","ND00",43.1,38,"Male",0.71,"Sometimes",0.9,"Lean Republican","2020-05-30",TRUE
-"631209","2020-09-21 16:31:19","Oregon","OR04",14.9,59,"Male",0.41,"Everyday",1.8,"Strong Democrat","2020-09-21",TRUE
-"267592","2020-03-16 09:14:26","Maryland","MD08",3.2,65,"Female",0.94,"Sometimes",0.4,"Lean Democrat","2020-03-16",TRUE
-"983194","2020-06-10 18:34:23","Nevada","NV02",21.9,29,"Male",0.67,"Rarely",0.8,"Lean Republican","2020-06-10",FALSE
-"154753","2020-11-20 10:48:09","Wyoming","WY00",35.6,40,"Female",0.59,"Sometimes",0.7,"Lean Republican","2020-11-20",TRUE
-"718311","2020-05-02 12:32:09","Iowa","IA03",49.5,54,"Male",0.83,"Everyday",1.0,"Strong Democrat","2020-05-02",TRUE
-"925173","2020-06-24 13:56:19","Utah","UT04",6.8,30,"Female",0.39,"Rarely",0.5,"Lean Republican","2020-06-24",FALSE
-"148213","2020-11-05 17:25:45","Kansas","KS02",19.8,74,"Male",0.27,"Sometimes",0.6,"Lean Republican","2020-11-05",TRUE
-"692431","2020-05-14 18:47:36","Hawaii","HI01",11.1,44,"Female",0.52,"Everyday",1.6,"Strong Democrat","2020-05-14",TRUE
-"259651","2020-03-12 15:25:01","Mississippi","MS03",8.3,27,"Male",0.78,"Rarely",0.9,"Lean Republican","2020-03-12",FALSE
-"842621","2020-06-01 14:10:58","Kentucky","KY04",10.9,58,"Female",0.44,"Sometimes",0.7,"Lean Democrat","2020-06-01",TRUE
-"364981","2020-04-07 12:39:06","New Hampshire","NH02",30.5,61,"Male",0.86,"Sometimes",0.4,"Lean Republican","2020-04-07",TRUE
-"179082","2020-12-18 18:25:09","Michigan","MI08",26.4,51,"Female",0.36,"Rarely",0.6,"Lean Democrat","2020-12-18",FALSE
-"612383","2020-09-01 11:15:19","Arkansas","AR02",38.8,48,"Male",0.95,"Everyday",1.1,"Strong Democrat","2020-09-01",TRUE
-"736859","2020-05-09 13:43:26","Vermont","VT00",41.9,69,"Female",0.49,"Sometimes",1.3,"Strong Democrat","2020-05-09",TRUE
-"423201","2020-07-05 12:45:04","New Mexico","NM01",14.3,56,"Male",0.72,"Everyday",0.9,"Strong Democrat","2020-07-05",TRUE
-"519199","2020-08-10 19:04:35","Connecticut","CT04",19.1,39,"Female",0.82,"Rarely",1.2,"Strong Democrat","2020-08-10",TRUE
-"162942","2020-11-28 10:33:56","Ohio","OH07",20.2,62,"Male",0.29,"Sometimes",0.5,"Lean Democrat","2020-11-28",TRUE
-"299759","2020-03-21 14:22:10","Alabama","AL04",47.6,50,"Female",0.88,"Everyday",1.5,"Strong Democrat","2020-03-21",TRUE
-"621194","2020-09-11 16:01:55","Massachusetts","MA06",4.9,67,"Male",0.52,"Rarely",0.8,"Lean Democrat","2020-09-11",FALSE
-"798011","2020-05-29 18:14:10","Montana","MT00",29.5,68,"Female",0.76,"Sometimes",1.4,"Strong Republican","2020-05-29",TRUE
-"189351","2020-12-30 15:40:42","South Carolina","SC03",22.4,42,"Male",0.92,"Everyday",1.1,"Strong Republican","2020-12-30",TRUE
-"475637","2020-07-20 13:29:47","Oklahoma","OK03",16.8,73,"Female",0.34,"Rarely",0.5,"Lean Republican","2020-07-20",FALSE
-"598298","2020-08-27 11:13:08","New York","NY14",39.4,55,"Male",0.69,"Everyday",1.8,"Strong Democrat","2020-08-27",TRUE
-"169343","2020-11-21 14:05:33","Louisiana","LA03",44.7,65,"Female",0.85,"Sometimes",1.2,"Strong Democrat","2020-11-21",TRUE
-"753891","2020-05-19 18:53:25","North Carolina","NC08",18.9,50,"Male",0.93,"Rarely",0.9,"Lean Republican","2020-05-19",FALSE
-"284032","2020-03-18 17:26:04","Tennessee","TN08",9.6,29,"Female",0.36,"Sometimes",0.4,"Lean Democrat","2020-03-18",TRUE
-"933832","2020-06-27 15:24:18","Arizona","AZ05",13.4,46,"Male",0.71,"Rarely",0.8,"Strong Republican","2020-06-27",TRUE
-"667812","2020-04-27 19:03:34","Delaware","DE00",35.3,60,"Female",0.63,"Everyday",1.1,"Strong Democrat","2020-04-27",TRUE
-"816651","2020-06-01 12:03:10","Colorado","CO06",26.4,36,"Male",0.87,"Rarely",0.5,"Lean Democrat","2020-06-01",TRUE
-"542261","2020-08-15 18:55:33","Wisconsin","WI03",20.9,64,"Female",0.58,"Sometimes",1.6,"Strong Democrat","2020-08-15",TRUE
-"288141","2020-03-19 14:51:48","Alaska","AK00",15.3,73,"Male",0.54,"Rarely",0.8,"Lean Republican","2020-03-19",FALSE
-"756822","2020-05-20 10:11:52","South Dakota","SD00",47.2,39,"Female",0.74,"Everyday",1.3,"Strong Republican","2020-05-20",TRUE
-"465661","2020-07-18 14:51:58","Pennsylvania","PA15",11.7,27,"Male",0.44,"Sometimes",0.7,"Lean Democrat","2020-07-18",TRUE
-"945621","2020-06-30 13:39:24","Missouri","MO05",29.7,44,"Female",0.83,"Rarely",0.9,"Lean Republican","2020-06-30",FALSE
-"198721","2020-01-03 18:18:12","Virginia","VA09",25.6,63,"Male",0.69,"Everyday",1.4,"Strong Democrat","2020-01-03",TRUE
-"627411","2020-09-13 17:18:43","Idaho","ID01",38.4,49,"Female",0.98,"Rarely",1.2,"Strong Republican","2020-09-13",TRUE
-"847882","2020-06-02 14:35:43","Florida","FL11",42.6,33,"Male",0.76,"Sometimes",0.7,"Lean Republican","2020-06-02",TRUE
-"391821","2020-04-14 12:28:33","Indiana","IN01",10.3,61,"Female",0.84,"Everyday",1.0,"Strong Democrat","2020-04-14",TRUE
-"575851","2020-08-24 15:45:41","Maine","ME01",23.9,68,"Male",0.56,"Rarely",1.5,"Strong Democrat","2020-08-24",TRUE
-"269351","2020-03-14 10:48:35","Georgia","GA01",31.7,52,"Female",0.93,"Sometimes",0.6,"Lean Democrat","2020-03-14",TRUE
-"644981","2020-09-24 19:48:49","California","CA46",16.4,45,"Male",0.72,"Everyday",1.7,"Strong Democrat","2020-09-24",TRUE
-"718651","2020-05-03 12:05:39","Texas","TX31",33.5,50,"Female",0.85,"Sometimes",0.9,"Lean Republican","2020-05-03",TRUE
-"832931","2020-05-31 17:32:38","Oklahoma","OK01",29.4,65,"Male",0.98,"Rarely",1.2,"Lean Republican","2020-05-31",TRUE
-"592491","2020-08-28 16:38:14","Arkansas","AR01",22.7,32,"Female",0.39,"Sometimes",0.4,"Lean Democrat","2020-08-28",TRUE
-"264359","2020-03-13 16:25:55","Utah","UT01",41.5,48,"Male",0.81,"Rarely",0.8,"Lean Republican","2020-03-13",FALSE
-"751983","2020-05-17 18:21:09","Arizona","AZ07",11.2,60,"Female",0.91,"Sometimes",1.1,"Strong Democrat","2020-05-17",TRUE
-"398419","2020-04-16 16:51:17","Michigan","MI01",18.3,30,"Male",0.55,"Rarely",0.7,"Lean Democrat","2020-04-16",TRUE
-"565461","2020-08-23 19:25:30","Oregon","OR01",46.4,59,"Female",0.78,"Everyday",1.8,"Strong Democrat","2020-08-23",TRUE
-"289391","2020-03-20 19:59:12","New Jersey","NJ09",25.6,53,"Male",0.72,"Rarely",1.1,"Strong Democrat","2020-03-20",TRUE
-"609921","2020-09-04 12:01:09","Iowa","IA01",14.5,54,"Female",0.35,"Rarely",0.8,"Lean Republican","2020-09-04",FALSE
-"854721","2020-06-04 19:57:21","Wisconsin","WI01",21.1,40,"Male",0.68,"Sometimes",0.6,"Lean Democrat","2020-06-04",TRUE
-"455439","2020-07-14 12:08:59","Pennsylvania","PA11",28.6,57,"Female",0.46,"Sometimes",1.6,"Strong Democrat","2020-07-14",TRUE
-"668191","2020-04-28 14:45:19","North Dakota","ND00",40.1,71,"Male",0.89,"Rarely",0.7,"Strong Republican","2020-04-28",TRUE
-"739439","2020-05-11 10:35:31","South Dakota","SD00",23.5,36,"Female",0.94,"Everyday",1.9,"Strong Republican","2020-05-11",TRUE
-"186841","2020-12-25 10:49:51","Alaska","AK00",15.5,68,"Male",0.81,"Rarely",0.8,"Lean Republican","2020-12-25",FALSE
-"449351","2020-07-08 14:31:04","Idaho","ID01",48.8,61,"Female",0.64,"Sometimes",1.0,"Lean Republican","2020-07-08",TRUE
-"655191","2020-09-30 18:45:23","Rhode Island","RI01",46.6,69,"Male",0.89,"Rarely",0.6,"Lean Democrat","2020-09-30",TRUE
-"767899","2020-05-24 16:16:55","Montana","MT00",25.8,50,"Female",0.56,"Sometimes",0.9,"Strong Republican","2020-05-24",TRUE
-"288432","2020-03-19 11:42:47","Maryland","MD04",33.2,42,"Male",0.65,"Rarely",0.5,"Lean Democrat","2020-03-19",TRUE
-"518879","2020-08-11 10:37:09","Oklahoma","OK03",47.6,66,"Female",0.98,"Rarely",0.8,"Lean Republican","2020-08-11",TRUE
-"827261","2020-05-30 17:20:48","Utah","UT02",37.2,49,"Male",0.68,"Sometimes",0.8,"Strong Republican","2020-05-30",TRUE
-"599139","2020-08-28 13:38:36","Iowa","IA04",17.9,50,"Female",0.46,"Everyday",0.6,"Strong Democrat","2020-08-28",TRUE
-"694321","2020-05-16 14:44:19","Vermont","VT00",22.4,70,"Male",0.91,"Rarely",0.8,"Strong Democrat","2020-05-16",TRUE
-"486199","2020-07-24 19:21:56","Florida","FL15",32.5,48,"Female",0.63,"Sometimes",0.9,"Strong Republican","2020-07-24",TRUE
-"751381","2020-05-17 16:19:56","Arkansas","AR03",33.5,69,"Male",0.83,"Rarely",1.6,"Lean Democrat","2020-05-17",TRUE
-"422201","2020-07-03 18:04:43","Ohio","OH04",26.2,31,"Female",0.39,"Sometimes",0.7,"Strong Democrat","2020-07-03",TRUE
-"648182","2020-09-28 18:58:12","Connecticut","CT05",27.5,62,"Male",0.55,"Everyday",0.6,"Lean Democrat","2020-09-28",TRUE
-"629321","2020-09-16 15:18:17","South Carolina","SC02",35.5,56,"Female",0.77,"Sometimes",0.9,"Strong Republican","2020-09-16",TRUE
-"747891","2020-05-16 16:42:19","Michigan","MI07",42.9,67,"Male",0.69,"Rarely",0.8,"Lean Republican","2020-05-16",TRUE
-"258499","2020-03-10 10:36:53","Texas","TX24",46.6,52,"Female",0.86,"Everyday",1.4,"Strong Republican","2020-03-10",TRUE
-"665921","2020-04-25 16:01:07","Arizona","AZ05",21.9,33,"Male",0.75,"Rarely",0.5,"Lean Democrat","2020-04-25",TRUE
-"811221","2020-05-30 18:36:54","New York","NY14",47.5,54,"Female",0.85,"Sometimes",1.0,"Strong Democrat","2020-05-30",TRUE
-"449599","2020-07-09 13:35:09","Pennsylvania","PA07",25.8,61,"Male",0.67,"Rarely",0.6,"Lean Democrat","2020-07-09",TRUE
-"677352","2020-04-30 14:36:20","Missouri","MO06",26.5,42,"Female",0.67,"Sometimes",0.7,"Strong Republican","2020-04-30",TRUE
-"763891","2020-05-22 10:34:13","New Jersey","NJ12",29.7,48,"Male",0.81,"Rarely",0.8,"Strong Democrat","2020-05-22",TRUE
-"234921","2020-02-28 15:16:19","Oklahoma","OK01",18.1,64,"Female",0.75,"Sometimes",0.7,"Lean Republican","2020-02-28",TRUE
-"616361","2020-09-08 19:06:57","Iowa","IA03",28.9,35,"Male",0.36,"Rarely",1.1,"Strong Democrat","2020-09-08",TRUE
-"672851","2020-04-28 11:25:58","Vermont","VT00",21.1,42,"Female",0.69,"Sometimes",0.9,"Strong Democrat","2020-04-28",TRUE
-"456431","2020-07-15 14:01:26","California","CA18",39.7,46,"Male",0.44,"Rarely",0.9,"Strong Democrat","2020-07-15",TRUE
-"725291","2020-05-05 19:18:58","Nevada","NV02",46.2,56,"Female",0.63,"Everyday",1.7,"Strong Democrat","2020-05-05",TRUE
-"654182","2020-09-30 11:36:08","Kentucky","KY02",34.3,66,"Male",0.74,"Sometimes",0.5,"Strong Democrat","2020-09-30",TRUE
-"743971","2020-05-14 15:13:49","Indiana","IN08",31.2,54,"Female",0.74,"Rarely",1.0,"Strong Democrat","2020-05-14",TRUE
-"528791","2020-08-12 11:35:14","Michigan","MI06",40.8,61,"Male",0.83,"Sometimes",0.8,"Lean Democrat","2020-08-12",TRUE
-"612819","2020-09-06 17:08:49","Alaska","AK00",48.4,40,"Female",0.39,"Rarely",0.6,"Lean Democrat","2020-09-06",TRUE
-"278011","2020-03-15 10:16:43","Arizona","AZ04",30.9,43,"Male",0.9,"Sometimes",0.8,"Lean Republican","2020-03-15",TRUE
-"793699","2020-05-28 11:06:51","New Hampshire","NH02",20.4,48,"Female",0.38,"Everyday",0.6,"Strong Democrat","2020-05-28",TRUE
-"434401","2020-07-05 12:50:19","Tennessee","TN07",23.1,33,"Male",0.58,"Rarely",1.2,"Lean Republican","2020-07-05",TRUE
-"603499","2020-09-02 14:22:35","Oregon","OR03",13.7,55,"Female",0.69,"Sometimes",0.8,"Strong Democrat","2020-09-02",TRUE
-"676241","2020-04-29 18:38:53","Indiana","IN04",40.2,65,"Male",0.36,"Rarely",0.6,"Lean Democrat","2020-04-29",TRUE
-"555351","2020-08-19 18:28:47","Oklahoma","OK02",22.3,51,"Female",0.62,"Sometimes",1.0,"Lean Republican","2020-08-19",TRUE
-"628739","2020-09-15 15:42:52","Arkansas","AR01",39.1,60,"Male",0.71,"Rarely",0.5,"Lean Democrat","2020-09-15",TRUE
-"259471","2020-03-12 19:02:32","Michigan","MI11",26.6,68,"Female",0.84,"Sometimes",0.8,"Lean Democrat","2020-03-12",TRUE
-"827731","2020-05-31 15:47:49","Montana","MT00",47.3,69,"Male",0.57,"Rarely",0.7,"Lean Republican","2020-05-31",TRUE
-"698961","2020-05-18 15:46:08","Connecticut","CT03",14.6,56,"Female",0.85,"Sometimes",1.3,"Strong Democrat","2020-05-18",TRUE
-"465531","2020-07-18 14:03:59","Virginia","VA06",20.8,41,"Male",0.64,"Rarely",0.7,"Lean Democrat","2020-07-18",TRUE
-"537701","2020-08-14 18:33:56","Minnesota","MN05",45.6,72,"Female",0.89,"Sometimes",0.6,"Strong Democrat","2020-08-14",TRUE
-"741141","2020-05-12 11:11:34","Texas","TX20",18.5,50,"Male",0.92,"Rarely",0.4,"Lean Democrat","2020-05-12",TRUE
-"293811","2020-03-20 16:48:21","Illinois","IL13",23.9,63,"Female",0.39,"Sometimes",1.5,"Strong Democrat","2020-03-20",TRUE
-"851381","2020-06-04 19:27:03","South Carolina","SC04",44.2,70,"Male",0.74,"Rarely",0.7,"Lean Republican","2020-06-04",TRUE
-"631341","2020-09-19 19:21:19","Idaho","ID02",41.3,54,"Female",0.75,"Sometimes",0.9,"Lean Republican","2020-09-19",TRUE
-"274241","2020-03-14 18:25:21","Wisconsin","WI03",24.9,51,"Male",0.81,"Everyday",1.3,"Strong Democrat","2020-03-14",TRUE
-"701381","2020-05-19 19:42:33","Alabama","AL01",13.4,33,"Female",0.42,"Sometimes",0.4,"Strong Democrat","2020-05-19",TRUE
-"564959","2020-08-22 11:51:04","California","CA45",46.7,55,"Male",0.65,"Rarely",0.8,"Strong Democrat","2020-08-22",TRUE
-"744229","2020-05-14 15:21:23","Kentucky","KY05",43.3,72,"Female",0.32,"Rarely",0.4,"Strong Democrat","2020-05-14",TRUE
-"698241","2020-05-18 13:56:26","Missouri","MO08",37.9,49,"Male",0.54,"Sometimes",1.0,"Strong Democrat","2020-05-18",TRUE
-"268651","2020-03-14 15:17:42","Louisiana","LA06",18.4,54,"Female",0.77,"Everyday",0.7,"Strong Democrat","2020-03-14",TRUE
-"654391","2020-09-30 17:20:42","North Carolina","NC09",27.6,69,"Male",0.47,"Rarely",1.1,"Lean Democrat","2020-09-30",TRUE
-"471849","2020-07-20 18:55:45","Mississippi","MS02",16.4,61,"Female",0.58,"Sometimes",0.8,"Strong Democrat","2020-07-20",TRUE
-"811851","2020-05-31 12:36:05","New York","NY15",23.3,38,"Male",0.96,"Everyday",1.6,"Strong Democrat","2020-05-31",TRUE
-"656142","2020-10-01 19:20:30","Virginia","VA10",47.3,49,"Female",0.93,"Sometimes",1.1,"Strong Democrat","2020-10-01",TRUE
-"623549","2020-09-12 10:32:38","Nebraska","NE02",32.9,64,"Male",0.79,"Rarely",1.3,"Lean Republican","2020-09-12",TRUE
-"749201","2020-05-16 11:49:10","Arizona","AZ09",46.9,68,"Female",0.91,"Everyday",1.0,"Strong Democrat","2020-05-16",TRUE
-"671199","2020-04-28 16:07:14","Montana","MT00",25.8,51,"Male",0.78,"Rarely",0.7,"Lean Republican","2020-04-28",TRUE
-"444201","2020-07-07 14:35:16","New Hampshire","NH01",48.6,73,"Female",0.67,"Sometimes",1.2,"Strong Democrat","2020-07-07",TRUE
-"699101","2020-05-18 19:36:22","Minnesota","MN06",29.2,35,"Male",0.75,"Rarely",1.3,"Lean Democrat","2020-05-18",TRUE
-"289291","2020-03-19 15:47:37","Florida","FL05",42.7,54,"Female",0.75,"Sometimes",0.6,"Lean Republican","2020-03-19",TRUE
-"749621","2020-05-16 17:08:56","Kentucky","KY04",14.6,42,"Male",0.39,"Sometimes",1.2,"Strong Democrat","2020-05-16",TRUE
-"649191","2020-10-02 12:05:10","Ohio","OH08",34.2,68,"Female",0.73,"Everyday",0.7,"Lean Democrat","2020-10-02",TRUE
-"473299","2020-07-22 16:14:34","Texas","TX07",26.5,61,"Male",0.83,"Rarely",0.5,"Strong Republican","2020-07-22",TRUE
-"652351","2020-09-29 18:32:37","New Jersey","NJ06",11.1,64,"Female",0.84,"Sometimes",0.9,"Strong Democrat","2020-09-29",TRUE
-"735239","2020-05-08 14:19:07","Utah","UT04",20.7,40,"Male",0.8,"Rarely",0.7,"Lean Republican","2020-05-08",TRUE
-"616991","2020-09-09 10:16:03","Wisconsin","WI08",27.5,60,"Female",0.56,"Sometimes",0.9,"Strong Democrat","2020-09-09",TRUE
-"649811","2020-10-02 17:33:49","Michigan","MI13",21.2,39,"Male",0.84,"Rarely",0.9,"Lean Democrat","2020-10-02",TRUE
-"736389","2020-05-09 11:41:52","Iowa","IA01",31.9,55,"Female",0.81,"Everyday",1.6,"Strong Democrat","2020-05-09",TRUE
-"517379","2020-08-10 18:15:45","Louisiana","LA02",37.8,65,"Male",0.83,"Sometimes",0.7,"Strong Democrat","2020-08-10",TRUE
-"625681","2020-09-13 19:23:27","California","CA34",38.3,67,"Female",0.5,"Rarely",1.0,"Lean Democrat","2020-09-13",TRUE
-"795799","2020-05-28 10:44:49","New Mexico","NM02",22.3,53,"Male",0.59,"Sometimes",1.0,"Strong Democrat","2020-05-28",TRUE
-"485491","2020-07-24 19:51:00","Oregon","OR05",19.4,31,"Female",0.42,"Rarely",0.6,"Lean Republican","2020-07-24",TRUE
-"594111","2020-08-29 17:26:11","Kentucky","KY06",17.5,42,"Male",0.83,"Sometimes",0.9,"Lean Democrat","2020-08-29",TRUE
-"748311","2020-05-15 16:35:21","Virginia","VA03",44.4,49,"Female",0.73,"Everyday",0.6,"Strong Democrat","2020-05-15",TRUE
-"279061","2020-03-15 16:22:36","Indiana","IN05",43.4,53,"Male",0.96,"Rarely",0.9,"Lean Republican","2020-03-15",TRUE
-"742939","2020-05-13 14:03:20","Utah","UT05",29.8,66,"Female",0.94,"Sometimes",1.4,"Strong Democrat","2020-05-13",TRUE
-"597611","2020-08-27 13:39:49","Texas","TX01",25.5,35,"Male",0.71,"Rarely",1.0,"Lean Democrat","2020-08-27",TRUE
-"615651","2020-09-07 15:52:47","North Dakota","ND00",35.1,54,"Female",0.46,"Sometimes",0.7,"Lean Republican","2020-09-07",TRUE
-"654259","2020-10-01 14:08:15","South Carolina","SC07",40.8,52,"Male",0.75,"Rarely",1.1,"Strong Democrat","2020-10-01",TRUE
-"499411","2020-07-27 14:01:20","Nevada","NV03",18.3,52,"Female",0.74,"Sometimes",0.9,"Strong Democrat","2020-07-27",TRUE
-"683701","2020-05-01 10:05:20","Delaware","DE00",11.6,68,"Male",0.69,"Everyday",1.6,"Strong Democrat","2020-05-01",TRUE
-"631921","2020-09-20 15:43:58","New Jersey","NJ04",12.8,37,"Female",0.8,"Rarely",0.5,"Strong Democrat","2020-09-20",TRUE
-"537721","2020-08-14 11:11:28","Missouri","MO07",35.1,68,"Male",0.77,"Sometimes",0.9,"Lean Republican","2020-08-14",TRUE
-"747221","2020-05-16 14:14:41","California","CA19",14.9,47,"Female",0.34,"Sometimes",0.9,"Strong Democrat","2020-05-16",TRUE
-"597591","2020-08-27 15:11:40","Florida","FL09",24.9,53,"Male",0.53,"Everyday",0.8,"Lean Democrat","2020-08-27",TRUE
-"695151","2020-05-17 13:46:40","Michigan","MI08",18.2,61,"Female",0.57,"Rarely",1.2,"Strong Democrat","2020-05-17",TRUE
-"754399","2020-05-19 18:47:45","Kentucky","KY05",16.1,31,"Male",0.47,"Sometimes",1.1,"Lean Republican","2020-05-19",TRUE
-"759351","2020-05-21 15:31:19","Montana","MT00",36.8,39,"Female",0.84,"Sometimes",1.8,"Strong Republican","2020-05-21",TRUE
-"6701479","2020-06-21 11:59:18","Florida","FL-7","3.3","35","Male","1.4","Yes, but only once","0.0","Strong Republican","2020-06-21",True
-"5410187","2020-07-11 16:30:46","Illinois","IL-8","4.9","56","Female","1.3","No extra mask","1.0","Lean Democrat","2020-07-11",True
-"6164281","2020-08-05 08:52:24","Georgia","GA-7","3.5","41","Male","1.7","Yes, multiple times","0.5","Weak Republican","2020-08-05",False
-"4841971","2020-04-28 15:04:13","Michigan","MI-11","4.8","64","Female","1.2","No extra mask","1.0","Strong Democrat","2020-04-28",True
-"7138929","2020-09-10 14:28:24","North Carolina","NC-8","4.3","39","Male","1.5","Yes, but only once","0.0","Lean Republican","2020-09-10",True
-"5981115","2020-07-24 19:30:17","Pennsylvania","PA-10","4.9","44","Female","1.4","No extra mask","1.0","Strong Democrat","2020-07-24",True
-"6329571","2020-09-24 12:31:05","Ohio","OH-5","3.5","49","Male","1.7","Yes, multiple times","0.5","Weak Democrat","2020-09-24",False
-"1184928","2021-01-04 16:20:42","Colorado","CO-7","4.7","38","Female","1.9","Yes, but only once","0.0","Lean Democrat","2021-01-04",True
-"4601154","2020-03-31 17:12:01","Arizona","AZ-9","4.1","57","Male","1.2","No extra mask","1.0","Strong Republican","2020-03-31",True
-"5259178","2020-06-18 09:06:24","Louisiana","LA-4","3.4","46","Female","1.1","Yes, multiple times","0.5","Weak Democrat","2020-06-18",False
+1443322,2020-08-15 10:41:40,FL,FL01,90,42,Male,12.3,Yes,Biden,Strong Democrat,2020-08-15,True
+2807656,2020-09-24 14:47:29,CA,CA22,78,27,Female,8.9,No,Trump,Weak Republican,2020-09-24,False
+1102321,2020-11-05 18:13:57,NY,NY19,55,25,Male,16.5,Yes,Biden,Independent,2020-11-05,True
+1406984,2020-06-20 11:46:43,GA,GA04,48,35,Female,5.2,Yes,Trump,Strong Republican,2020-06-20,True
+2814798,2020-10-31 20:40:15,TX,TX06,108,17,Male,7.3,Yes,Trump,Weak Republican,2020-10-31,True
+1300989,2020-07-14 16:32:11,IL,IL17,45,62,Male,6.7,Yes,Biden,Strong Democrat,2020-07-14,False
+2110120,2020-12-01 14:23:53,WA,WA08,79,44,Female,10.9,Yes,Biden,Independent,2020-12-01,True
+1935671,2020-09-09 13:39:34,MI,MI05,52,38,Male,3.8,Yes,Trump,Weak Republican,2020-09-09,False
+1714394,2020-08-30 16:59:56,OH,OH05,34,32,Male,3.9,No,Biden,Strong Democrat,2020-08-30,False
+1279359,2020-07-10 12:15:27,LA,LA01,31,41,Male,6.3,No,Trump,Weak Republican,2020-07-10,True
+1413691,2020-06-19 13:15:51,IN,IN04,57,30,Male,14.6,No,Trump,Strong Republican,2020-06-19,True
+2986709,2020-11-09 19:25:00,NV,NV04,49,32,Male,4.3,Yes,Biden,Independent,2020-11-09,True
+1093515,2020-07-21 15:48:03,WI,WI06,74,47,Female,11.5,No,Biden,Strong Democrat,2020-07-21,False
+1622491,2020-09-24 14:20:21,SC,SC07,47,25,Male,15.3,Yes,Trump,Strong Republican,2020-09-24,True
+1558467,2020-10-20 12:04:15,IA,IA04,89,44,Female,8.4,Yes,Biden,Independent,2020-10-20,False
+1319850,2020-09-29 16:25:36,KY,KY04,62,41,Male,6.2,Yes,Trump,Weak Republican,2020-09-29,True
+1424561,2020-09-04 19:07:42,MO,MO05,97,38,Female,17.8,Yes,Biden,Strong Democrat,2020-09-04,False
+1792611,2020-08-05 10:03:57,CO,CO03,37,25,Female,6.6,Yes,Biden,Independent,2020-08-05,True
+1172318,2020-10-16 12:40:14,TN,TN05,49,53,Male,8.6,Yes,Trump,Weak Republican,2020-10-16,True
+1832560,2020-06-24 18:07:36,NJ,NJ07,90,52,Female,7.4,Yes,Biden,Strong Democrat,2020-06-24,True
+1994300,2020-07-19 13:08:24,UT,UT02,92,58,Male,20.2,no,Biden,Weak Democrat,2020-07-19,False
+2943722,2020-09-28 17:12:57,KS,KS02,48,26,Male,2.8,Yes,Trump,Strong Republican,2020-09-28,True
+1862461,2020-08-25 19:04:24,ME,ME01,46,56,Male,6.6,Yes,Biden,Strong Democrat,2020-08-25,False
+2401568,2020-12-07 16:41:36,AZ,AZ03,85,57,Male,12.9,Yes,Biden,Weak Democrat,2020-12-07,False
+1432533,2020-07-29 16:28:29,MA,MA01,12,48,Female,11.7,Yes,Biden,Strong Democrat,2020-07-29,True
+1966243,2020-11-11 14:04:17,HI,HI02,82,31,Male,16.8,Yes,Biden,Weak Democrat,2020-11-11,False
+1324193,2020-07-04 12:41:46,ND,ND01,54,61,Female,5.2,No,Trump,Weak Republican,2020-07-04,True
+1574327,2020-08-31 16:26:11,NM,NM01,88,46,Male,10.5,Yes,Trump,Strong Republican,2020-08-31,True
+1772304,2020-06-18 13:41:02,OK,OK04,67,50,Male,7.3,Yes,Trump,Weak Republican,2020-06-18,True
+1652468,2020-09-15 18:54:54,AL,AL05,81,35,Male,2.3,Yes,Trump,Strong Republican,2020-09-15,True
+1958496,2020-12-03 18:58:41,AK,AK01,83,59,Female,17.2,Yes,Biden,Weak Democrat,2020-12-03,False
+2115678,2020-07-14 14:17:03,ID,ID01,70,42,Female,5.2,Yes,Trump,Strong Republican,2020-07-14,True
+1734290,2020-09-04 15:19:53,AR,AR04,56,37,Male,7.3,Yes,Biden,Weak Democrat,2020-09-04,False
+2421087,2020-06-23 11:51:33,AL,AL06,26,35,Male,12.5,No,Trump,Strong Republican,2020-06-23,True
+1435326,2020-09-16 14:30:55,GA,GA07,91,41,Female,13.6,Yes,Biden,Weak Democrat,2020-09-16,True
+2184686,2020-09-05 15:55:32,RI,RI01,42,58,Male,3.6,Yes,Biden,Strong Democrat,2020-09-05,False
+2693943,2020-06-22 19:05:33,KS,KS03,41,30,Female,20.3,Yes,Trump,Strong Republican,2020-06-22,True
+1496897,2020-06-13 11:07:25,TX,TX28,84,45,Female,10.7,No,Biden,Weak Democrat,2020-06-13,True
+2011429,2020-07-04 13:27:15,OR,OR04,81,56,Male,5.2,Yes,Biden,Strong Democrat,2020-07-04,True
+2701568,2020-08-26 18:01:56,NC,NC10,31,24,Male,6.1,Yes,Trump,Weak Republican,2020-08-26,True
+1451930,2020-06-16 16:31:15,SC,SC05,28,34,Female,3.5,Yes,Biden,Weak Democrat,2020-06-16,True
+2314440,2020-08-04 13:07:49,GA,GA01,28,36,Male,4.9,No,Trump,Weak Republican,2020-08-04,False
+2674344,2020-08-26 18:14:27,OH,OH11,72,38,Female,14.8,Yes,Biden,Strong Democrat,2020-08-26,False
+1732981,2020-07-05 14:30:55,AK,AK00,14,63,Male,1.3,No,Trump,Weak Republican,2020-07-05,True
+1874261,2020-07-08 11:32:07,NJ,NJ03,59,44,Male,2.6,Yes,Biden,Strong Democrat,2020-07-08,True
+2596250,2020-09-07 19:58:34,NH,NH01,43,55,Male,11.6,Yes,Biden,Weak Democrat,2020-09-07,False
+1698461,2020-06-04 17:18:13,WI,WI02,94,64,Male,10.4,Yes,Trump,Strong Republican,2020-06-04,True
+1719878,2020-09-10 19:14:29,NM,NM02,67,44,Female,6.6,No,Trump,Weak Republican,2020-09-10,True
+2941623,2020-08-12 15:41:41,VA,VA06,74,39,Male,1.9,Yes,Biden,Weak Democrat,2020-08-12,False
+2134198,2020-11-13 10:23:14,IA,IA03,76,39,Male,3.4,No,Biden,Independent,2020-11-13,False
+1746557,2020-07-01 19:16:31,ME,ME01,96,61,Male,14.1,Yes,Biden,Strong Democrat,2020-07-01,True
+2614356,2020-10-07 15:16:41,ND,ND00,11,32,Male,3.9,No,Trump,Weak Republican,2020-10-07,False
+1441117,2020-08-16 19:14:19,WV,WV01,51,67,Male,2.6,Yes,Trump,Strong Republican,2020-08-16,True
+2443288,2020-09-21 17:25:56,KS,KS02,62,24,Male,5,No,Trump,Strong Republican,2020-09-21,True
+1196243,2020-08-27 13:07:07,CO,CO02,13,38,Female,2.9,Yes,Biden,Weak Democrat,2020-08-27,False
+2911876,2020-07-31 11:13:15,NC,NC04,58,50,Male,2.8,Yes,Trump,Weak Republican,2020-07-31,True
+2923322,2020-08-22 15:18:22,RI,RI01,19,39,Female,19.2,Yes,Biden,Strong Democrat,2020-08-22,False
+1161944,2020-11-18 19:37:24,NV,NV01,91,45,Male,2.2,Yes,Biden,Weak Democrat,2020-11-18,False
+1793493,2020-06-18 14:36:55,NE,NE02,24,26,female,3.2,Yes,Trump,Weak Republican,2020-06-18,True
+2951950,2020-08-07 18:32:34,MT,MT01,47,37,Male,8,Yes,Biden,Weak Democrat,2020-08-07.FALSE
+1461219,2020-07-11 14:57:16,MO,MO07,56,56,Male,6,Yes,Trump,Weak Republican,2020-07-11,True
+2765320,2020-09-22 13:37:46,SC,SC07,76,42,Male,10,Yes,Biden,Weak Democrat,2020-09-22,False
+1704332,2020-06-19 11:38:56,ND,ND01,87,34,Female,13,Yes,Trump,Weak Republican,2020-06-19,True
+2085634,2020-07-26 12:19:02,GA,GA07,54,34,Male,1.3,Yes,Biden,Weak Democrat,2020-07-26,False
+1283319,2020-07-05 16:02:54,NE,NE02,90,58,Male,11,Yes,Biden,Strong Democrat,2020-07-05,True
+1984158,2020-08-11 18:41:10,IN,IN06,96,44,Male,17,No,Biden,Weak Democrat,2020-08-11,False
+2934190,2020-11-04 18:06:16,SD,SD01,13,26,Male,2,Yes,Trump,Weak Republican,2020-11-04,True
+1763418,2020-10-21 18:20:40,MI,MI08,31,47,Male,6,Yes,Trump,Strong Republican,2020-10-21,True
+1109457,2020-06-10 11:19:10,FL,FL01,29,56,Male,5,Yes,Biden,Weak Democrat,2020-06-10,False
+1557349,2020-06-12 16:15:00,PA,PA03,80,39,Male,3.9,Yes,Biden,Weak Democrat,2020-06-12,True
+1892176,2020-08-30 16:32:23,ME,ME01,55,56,Male,20,Yes,Biden,Strong Democrat,2020-08-30,True
+1419870,2020-08-28 18:36:14,OH,OH15,86,60,Male,4,No,Trump,Strong Republican,2020-08-28,True
+1335328,2020-07-11 17:38:45,ID,ID02,94,31,Male,13,Yes,Trump,Weak Republican,2020-07-11,True
+2335977,2020-09-13 14:37:21,AR,AR02,66,35,Female,8.4,Yes,Trump,Weak Republican,2020-09-13,True
+1381930,2020-07-22 18:47:08,WV,WV02,81,42,Female,1,Yes,Biden,Weak Democrat,2020-07-22,False
+2631081,2020-10-24 18:25:57,Va,VA07,97,33,Male,5,Yes,Trump,Weak Republican,2020-10-24,True
+2481456,2020-06-09 18:57:45,WA,WA01,91,46,Male,4.9,No,Biden,Weak Democrat,2020-06-09,True
+1516256,2020-10-12 19:15:35,NY,NY08,73,58,Male,10,Yes,Trump,Weak Republican,2020-10-12,True
+2088137,2020-08-15 17:25:42,AZ,AZ06,94,33,Female,4,Yes,Trump,Strong Republican,2020-08-15,True
+1634153,2020-06-15 19:11:22,GA,GA06,60,31,Male,1,Yes,Trump,Weak Republican,2020-06-15,True
+2025652,2020-09-17 16:28:09,NE,NE01,40,33,Male,16,Yes,Trump,Strong Republican,2020-09-17,True
+1496704,2020-10-14 15:49:05,CA,CA11,54,24,Female,18,Yes,Biden,Weak Democrat,2020-10-14,False
+2874274,2020-09-01 14:55:10,OR,OR03,82,55,Male,8,Yes,Biden,Strong Democrat,2020-09-01,False
+1962561,2020-07-16 10:13:13,KY,KY01,89,36,Male,20,Yes,Trump,Strong Republican,2020-07-16,True
+1241569,2020-06-11 15:13:03,TN,TN04,44,35,Male,12,Yes,Biden,Weak Democrat,2020-06-11,True
+1323841,2020-08-20 17:53:00,AL,AL04,51,33,Male,10.6,Yes,Trump,Strong Republican,2020-08-20,True
+2344690,2020-11-18 14:18:32,SD,SD01,46,26,Female,11.2,Yes,Trump,Weak Republican,2020-11-18,True
+1598652,2020-09-11 12:26:44,MA,MA04,44,43,Female,4,Yes,Biden,Weak Democrat,2020-09-11,True
+2963492,2020-07-26 18:49:29,CO,CO04,90,56,Male,14.9,Yes,Biden,Weak Democrat,2020-07-26,False
+1825329,2020-07-06 14:46:05,AZ,AZ05,41,53,Male,15,Yes,Trump,Strong Republican,2020-07-06,True
+2894388,2020-11-13 13:19:37,TX,TX28,31,32,Female,12,Yes,Biden,Weak Democrat,2020-11-13,True
+1456961,2020-10-24 15:49:19,IL,IL14,34,38,Male,7InSection=True,TRUE
+2877341,2020-08-25 14:11:42,FL,FL07,29,36,Male,4,Yes,Trump,Weak Republican,2020-08-25,True
+2012190,2020-10-06 12:46:55,MT,MT01,33,26,Female,1,No,Trump,Strong Republican,2020-10-06,True
+1715635,2020-07-19 19:44:19,WI,WI01,76,59,Female,11,Yes,Biden,Strong Democrat,2020-07-19,True
+2464120,2020-10-17 15:21:42,NC,NC09,82,40,Male,18,Yes,Biden,Weak Democrat,2020-10-17,False
+1751516,2020-11-14 18:30:54,OH,OH04,84,25,Male,8,Yes,Trump,Weak Republican,2020-11-14,True
+1371430,2020-07-09 14:01:24,NH,NH01,67,49,Male,20,Yes,Biden,Strong Democrat,2020-07-09,True
+2112562,2020-08-10 18:08:55,IA,IA02,53,41,Female,6,Yes,Trump,Weak Republican,2020-08-10,True
+1742498,2020-11-19 11:01:47,ID,ID02,70,68,Male,1,Yes,Biden,Weak Democrat,2020-11-19,False
+1764175,2020-08-26 13:48:19,MI,MI12,46,46,Male,1,Yes,Trump,Weak Republican,2020-08-26,True
+1442493,2020-07-07 15:50:39,WA,WA03,75,35,Male,7,Yes,Trump,Weak Republican,2020-07-07,True
+2571936,2020-08-17 15:18:35,GA,GA09,32,43,Female,14,Yes,Biden,Weak Democrat,2020-08-17,True
+1504387,2020-07-04 12:45:46,MO,MO03,55,33,Male,3,Yes,Trump,Weak Republican,2020-07-04,True
+1543495,2020-09-03 20:34:14,UT,UT03,98,34,Male,1,Yes,Trump,Weak Republican,2020-09-03,True
+2554918,2020-07-08 18:01:22,CO,CO01,19,56,Male,1,Yes,Trump,Weak Republican,2020-07-08,True
+1274497,2020-07-11 11:18:14,NM,NM02,54,29,Female,11,Yes,Biden,Weak Democrat,2020-07-11,False
+2631762,2020-07-09 16:33:19,IN,IN08,73,42,Male,11.3,Yes,Biden,Weak Democrat,2020-07-09,True
+2581493,2020-10-27 20:11:27,CT,CT03,45,49,Female,10,Yes,Biden,Strong Democrat,2020-10-27,True
+1482891,2020-07-04 13:19:05,LA,LA04,20,41,Male,15,Yes,Trump,Weak Republican,2020-07-04,True
+1406966,2020-09-19 19:23:17,ND,ND00,70,58,Male,14,Yes,Biden,Weak Democrat,2020-09-19,False
+2835322,2020-07-24 11:15:18,GA,GA11,39,57,Male,4,Yes,Trump,Weak Republican,2020-07-24,True
+2315842,2020-09-22 19:00:15,AZ,AZ04,64,36,Male,4,Yes,Biden,Weak Democrat,2020-09-22,False
+2031213,2020-10-16 19:25:39,DE,DE01,64,26,Male,8,Yes,Trump,Weak Republican,2020-10-16,True
+2751451,2020-09-07 19:39:23,MA,MA06,62,50,Male,12,Yes,Biden,Strong Democrat,2020-09-07,True
+1924154,2020-08-31 14:35:41,SC,SC07,97,38,Male,1,Yes,Biden,Weak Democrat,2020-08-31,True
+2604916,2020-08-20 17:17:59,MO,MO01,51,54,Male,15,Yes,Trump,Weak Republican,2020-08-20,True
+1417347,2020-10-23 18:31:15,OK,OK04,42,48,Male,4,Yes,Trump,Weak Republican,2020-10-23,True
+2881578,2020-09-09 18:44:18,UT,UT04,92,29,Male,15,Yes,Biden,Weak Democrat,2020-09-09,True
+1531992,2020-10-30 11:29:17,NJ,NJ10,85,49,Male,6,Yes,Biden,Weak Democrat,2020-10-30,True
+1326923,2020-08-20 13:01:30,WV,WV02,94,34,Male,20,Yes,Trump,Weak Republican,2020-08-20,True
+2272354,2020-07-08 11:58:45,KS,KS01,29,42,Male,18,Yes,Biden,Strong Democrat,2020-07-08,False
+2982986,2020-07-05 17:42:12,AL,AL02,74,41,Male,1,Yes,Trump,Weak Republican,2020-07-05,True
+2112157,2020-11-03 14:14:55,MS,MS04,88,39,Male,11,Yes,Biden,Weak Democrat,2020-11-03,False
+1735555,2020-11-12 19:02:33,RI,RI02,30,51,Female,15,Yes,Biden,Strong Democrat,2020-11-12,True
+1968240,2020-08-24 19:35:51,NV,NV04,81,28,Female,5,Yes,Biden,Weak Democrat,2020-08-24,True
+2895129,2020-07-25 16:27:52,IN,IN03,98,35,Male,5,Yes,Trump,Weak Republican,2020-07-25,True
+1488958,2020-08-18 16:15:08,PA,PA05,66,56,Male,19,Yes,Biden,Weak Democrat,2020-08-18,False
+2216252,2020-09-23 17:16:20,SC,SC04,50,39,Male,13,Yes,Trump,Weak Republican,2020-09-23,True
+2523259,2020-08-25 16:50:32,Lm,LA04,77,32,Male,8,Yes,Biden,Weak Democrat,2020-08-25,True
+2741629,2020-11-18 19:08:07,NH,NH01,57,55,Female,11,Yes,Biden,Weak Democrat,2020-11-18,True
+2632618,2020-09-02 13:26:26,NE,NE02,98,30,Male,5,Yes,Trump,Weak Republican,2020-09-02,True
+1134568,2020-09-14 19:05:19,NM,NM01,55,47,Male,18,Yes,Biden,Weak Democrat,2020-09-14,False
+2442563,2020-10-14 13:46:27,AL,AL05,76,36,Male,4,Yes,Trump,Weak Republican,2020-10-14,True
+1883211,2020-07-20 18:39:21,IA,IA02,80,33,Female,4,Yes,Biden,Weak Democrat,2020-07-20,False
+2941891,2020-08-24 19:42:40,MI,MI09,60,50,Female,14,Yes,Trump,Weak Republican,2020-08-24,True
+1172958,2020-07-16 14:46:36,VT,VT01,96,56,Male,12,Yes,Biden,Strong Democrat,2020-07-16,True
+2031864,2020-11-08 15:59:50,KS,KS01,21,34,Male,17,Yes,Biden,Weak Democrat,2020-11-08,True
+1053927,2020-09-19 13:26:42,TX,TX07,94,51,Male,3,Yes,Biden,Weak Democrat,2020-09-19,True
+1644358,2020-07-14 18:15:25,IN,IN09,11,30,Male,2,Yes,Trump,Weak Republican,2020-07-14,True
+1792450,2020-10-17 15:16:34,IL,IL11,75,34,Female,18,Yes,Biden,Weak Democrat,2020-10-17,False
+1016286,2020-10-24 19:18:38,MO,MO04,65,25,Male,2,Yes,Trump,Weak Republican,2020-10-24,True
+1413941,2020-07-07 18:17:37,NC,NC07,51,54,Male,10,Yes,Trump,Weak Republican,2020-07-07,True
+2281982,2020-10-08 18:03:07,MI,MI11,64,40,Male,4,No,Biden,Weak Democrat,2020-10-08,True
+1301952,2020-10-01 19:43:38,FL,FL14,81,30,Male,18,Yes,Biden,Weak Democrat,2020-10-01,False
+2845426,2020-08-20 16:57:09,OH,OH04,94,42,Male,9,Yes,Trump,Weak Republican,2020-08-20,True
+2581769,2020-09-10 13:53:24,GA,GA03,71,36,Male,8,Yes,Trump,Weak Republican,2020-09-10,True
+2331657,2020-11-12 16:54:59,IA,IA01,11,38,Male,14,Yes,Trump,Weak Republican,2020-11-12,True
+2816278,2020-11-01 16:56:56,MA,MA03,67,46,Male,16,Yes,Biden,Weak Democrat,2020-11-01,False
+2491510,2020-07-29 14:58:55,IN,IN07,44,57,Male,2,Yes,Trump,Weak Republican,2020-07-29,True
+2364850,2020-10-28 19:04:32,NE,NE01,62,42,Male,12,Yes,Biden,Weak Democrat,2020-10-28,True
+1992563,2020-10-09 15:10:10,MO,MO08,24,29,Female,12,Yes,Biden,Weak Democrat,2020-10-09,True
+1698463,2020-09-17 15:46:05,ME,ME02,53,41,Male,1,Yes,Biden,Weak Democrat,2020-09-17,True
+2202493,2020-06-29 12:39:13,IN,IN06,93,52,Male,15,Yes,Trump,Weak Republican,2020-06-29,True
+1906953,2020-08-08 13:56:45,IA,IA04,61,63,Male,10,Yes,Biden,Weak Democrat,2020-08-08,True
+2612251,2020-08-30 15:54:27,TX,TX18,48,25,Male,18,Yes,Trump,Weak Republican,2020-08-30,True
+1974858,2020-07-22 14:47:07,ND,ND00,89,46,Male,14,Yes,Trump,Weak Republican,2020-07-22,True
+1394790,2020-08-16 11:28:13,FL,FL02,69,31,Male,8,Yes,Biden,Weak Democrat,2020-08-16,True
+"142316", "2020-11-15 14:05:32", "California", "CA45", 30.0, 62, "Male", 1.237, "No", "Joe Biden", "Lean Democrat", "2020-11-15", True
+"142317", "2020-12-10 11:21:08", "New York", "NY16", 45.0, 38, "Female", 0.967, "Yes", "Not Asked", "Strong Democrat", "2020-12-10", True
+"142318", "2020-08-28 16:01:59", "Texas", "TX14", 11.0, 55, "Male", 1.198, "No", "Donald Trump", "Strong Republican", "2020-08-28", False
+"142319", "2020-11-20 10:49:52", "Florida", "FL27", 50.0, 42, "Female", 1.116, "Yes", "Joe Biden", "Lean Democrat", "2020-11-20", True
+"142320", "2020-09-19 13:11:44", "Georgia", "GA11", 59.0, 34, "Male", 1.034, "No", "Not Asked", "Independent", "2020-09-19", True
+"142321", "2020-06-26 14:36:18", "North Carolina", "NC11", 77.0, 51, "Female", 1.051, "Yes", "Not Asked", "Lean Republican", "2020-06-26", True
+"142322", "2020-10-23 19:34:49", "Michigan", "MI13", 22.0, 46, "Male", 0.903, "No", "Joe Biden", "Strong Democrat", "2020-10-23", True
+"142323", "2020-07-17 11:21:58", "Ohio", "OH03", 86.0, 29, "Female", 0.981, "Yes", "Not Asked", "Independent", "2020-07-17", True
+"142324", "2020-10-31 14:58:39", "Pennsylvania", "PA09", 52.0, 67, "Male", 1.105, "No", "Donald Trump", "Strong Republican", "2020-10-31", False
+"142325", "2020-08-05 15:16:52", "Minnesota", "MN05", 91.0, 58, "Female", 1.124, "Yes", "Joe Biden", "Lean Democrat", "2020-08-05", True
+"142326", "2020-09-23 19:45:08", "South Carolina", "SC06", 75.0, 41, "Male", 0.969, "No", "Donald Trump", "Lean Republican", "2020-09-23", False
+"142327", "2020-07-20 11:54:29", "Nevada", "NV02", 45.0, 27, "Female", 1.151, "Yes", "Joe Biden", "Lean Democrat", "2020-07-20", True
+"142328", "2020-11-04 16:06:48", "Wisconsin", "WI07", 15.0, 65, "Male", 1.195, "No", "Not Asked", "Strong Democrat", "2020-11-04", True
+"142329", "2020-10-09 14:42:19", "Arizona", "AZ04", 50.0, 36, "Female", 0.942, "Yes", "Not Asked", "Lean Republican", "2020-10-09", True
+"142330", "2020-08-25 12:11:48", "Tennessee", "TN06", 74.0, 53, "Male", 0.987, "No", "Donald Trump", "Strong Republican", "2020-08-25", False
+"5006489","2020-06-25 14:30:02","Texas","TX24",2209,41,"Male",1.2314,"No","I am not sure/don't know","Lean Republican","2020-06-25",True
+"5756462","2020-08-28 16:57:07","Illinois","IL11",2211,55,"Female",0.9129,"Yes","Joe Biden","Weak Democrat","2020-08-28",True
+"7689146","2020-12-22 11:18:36","Pennsylvania","PA06",2214,62,"Male",1.1596,"No","Donald Trump","Strong Republican","2020-12-22",True
+"7742988","2020-12-18 14:41:29","Ohio","OH16",2217,29,"Female",0.9958,"Yes","Joe Biden","Lean Democrat","2020-12-18",True
+"4587343","2020-06-12 17:19:53","North Carolina","NC07",2219,44,"Male",1.0792,"No","Donald Trump","Strong Republican","2020-06-12",True
+"5114761","2020-07-17 12:52:06","Michigan","MI05",2223,56,"Female",0.9038,"Yes","Not Asked","Independent","2020-07-17",True
+"6573429","2020-10-29 10:36:35","Virginia","VA03",2226,38,"Male",1.2157,"No","Joe Biden","Weak Democrat","2020-10-29",True
+"6731482","2020-11-09 11:17:45","Kentucky","KY04",2229,34,"Female",0.9576,"Yes","Donald Trump","Strong Republican","2020-11-09",True
+"7124633","2020-11-22 15:20:29","New Jersey","NJ05",2231,50,"Male",1.0933,"No","Not Asked","Lean Republican","2020-11-22",True
+"7791341","2021-01-03 10:43:37","Minnesota","MN06",2233,43,"Female",1.0426,"Yes","Joe Biden","Lean Democrat","2021-01-03",True
+"7932134","2021-01-09 12:04:22","Washington","WA06",2236,59,"Male",1.1974,"No","Not Asked","Strong Republican","2021-01-09",True
+"8191722","2021-01-15 18:27:24","Massachusetts","MA05",2238,39,"Female",0.9762,"Yes","Joe Biden","Weak Democrat","2021-01-15",True
+"8274395","2021-01-18 16:17:33","Arizona","AZ03",2241,32,"Male",1.1663,"No","Donald Trump","Strong Republican","2021-01-18",True
+"8532812","2021-01-24 15:07:17","Indiana","IN06",2243,54,"Female",0.9182,"Yes","Not Asked","Lean Republican","2021-01-24",True
+"8733415","2021-01-29 18:04:36","Tennessee","TN06",2245,45,"Male",1.0851,"No","Donald Trump","Strong Republican","2021-01-29",True
+"7810273","2020-05-12 14:34:47","Michigan","MI-12",1414.24,62,"Female",1.03,"yes","1","Strong Democrat","2020-05-12",TRUE
+"3514197","2020-06-02 12:21:31","New York","NY-10",345.65,45,"Male",0.85,"no","1","Weak Republican","2020-06-02",FALSE
+"2130956","2020-09-28 11:49:10","Texas","TX-33",421.18,39,"Female",1.21,"yes","0","Independent","2020-09-28",TRUE
+"6468192","2020-11-10 09:43:59","North Carolina","NC-02",190.93,68,"Male",0.98,"yes","1","Lean Democrat","2020-11-10",TRUE
+"8593453","2020-07-15 16:22:08","Georgia","GA-01",516.76,51,"Female",1.11,"no","1","Strong Republican","2020-07-15",FALSE
+"9354739","2020-06-04 15:51:41","New Jersey","NJ-01",682.28,49,"Male",1.07,"yes","1","Weak Democrat","2020-06-04",TRUE
+"7618374","2020-05-08 11:18:35","Ohio","OH-14",256.24,35,"Female",0.81,"no","1","Lean Republican","2020-05-08",FALSE
+"4681312","2020-12-21 09:26:58","Wisconsin","WI-03",475.94,60,"Male",1.29,"yes","1","Strong Democrat","2020-12-21",TRUE
+"6935168","2020-08-25 16:19:23","Virginia","VA-04",341.86,36,"Female",1.02,"yes","0","Independent","2020-08-25",TRUE
+"1214831","2020-06-01 09:51:32","Tennessee","TN-08",198.73,46,"Male",1.13,"yes","1","Lean Democrat","2020-06-01",TRUE
+"1920373","2021-01-08 16:39:29","Oregon","OR-05",542.18,53,"Female",1.25,"yes","1","Strong Democrat","2021-01-08",TRUE
+"4219176","2021-01-05 12:47:41","Connecticut","CT-04",416.27,57,"Male",0.89,"no","0","Weak Republican","2021-01-05",FALSE
+"3197348","2021-01-03 14:38:01","Delaware","DE-01",281.85,44,"Female",1.04,"yes","1","Lean Democrat","2021-01-03",TRUE
+"4952684","2021-01-01 15:31:41","New Hampshire","NH-01",468.98,34,"Male",1.18,"yes","1","Strong Republican","2021-01-01",TRUE
+"7607253","2020-11-01 08:00:05","Ohio","OH16",56,43,"Female",0.812,"no","Joe Biden","Lean Democrat","2020-11-01",TRUE
+"5601687","2020-08-22 18:19:59","Georgia","GA07",145,38,"Male",0.623,"yes","Not Asked","Independent","2020-08-22",FALSE
+"7104843","2020-10-25 10:46:18","Texas","TX23",125,27,"Female",0.956,"yes","Donald Trump","Strong Republican","2020-10-25",FALSE
+"5106791","2020-07-01 12:18:52","New York","NY10",65,51,"Male",0.918,"no","Joe Biden","Lean Democrat","2020-07-01",TRUE
+"6406215","2020-09-20 15:49:47","California","CA46",21,62,"Female",0.795,"yes","Not Asked","Weak Democrat","2020-09-20",FALSE
+"5401183","2020-07-14 15:38:05","Michigan","MI07",72,39,"Male",0.678,"no","Joe Biden","Lean Democrat","2020-07-14",TRUE
+"7506183","2020-11-28 13:29:58","Virginia","VA01",35,57,"Female",0.902,"yes","Joe Biden","Strong Democrat","2020-11-28",FALSE
+"7506695","2020-11-18 09:32:38","Massachusetts","MA05",22,32,"Male",0.955,"no","Not Asked","Independent","2020-11-18",FALSE
+"5907453","2020-08-31 17:25:57","Illinois","IL01",103,42,"Female",0.799,"yes","Donald Trump","Strong Republican","2020-08-31",TRUE
+"7506869","2020-11-25 17:10:22","Washington","WA01",26,50,"Male",0.678,"yes","Joe Biden","Lean Democrat","2020-11-25",TRUE
+"5106371","2020-07-04 11:42:09","New Jersey","NJ04",37,55,"Female",0.923,"no","Not Asked","Weak Democrat","2020-07-04",FALSE
+"7506397","2020-11-23 16:54:01","Oregon","OR02",56,33,"Male",0.944,"yes","Joe Biden","Strong Democrat","2020-11-23",TRUE
+"5401246","2020-07-08 12:27:05","Wisconsin","WI05",29,38,"Female",0.858,"yes","Donald Trump","Lean Republican","2020-07-08",FALSE
+"7506144","2020-11-29 10:37:17","Hawaii","HI01",24,56,"Male",0.919,"no","Not Asked","Independent","2020-11-29",FALSE
+"7506283","2020-11-19 09:49:08","Nevada","NV01",16,44,"Female",0.938,"yes","Joe Biden","Strong Democrat","2020-11-19",TRUE
+"7506924","2020-11-24 08:20:17","New Hampshire","NH02",19,41,"Male",0.968,"yes","Not Asked","Weak Republican","2020-11-24",FALSE
+"5106486","2020-07-03 10:33:21","Montana","MT01",14,53,"Female",0.843,"no","Donald Trump","Strong Republican","2020-07-03",TRUE
+"5907687","2020-08-30 12:41:40","Kentucky","KY02",96,45,"Male",0.807,"yes","Not Asked","Lean Republican","2020-08-30",FALSE
+"7506471","2020-11-27 14:26:11","Arkansas","AR02",22,58,"Female",0.858,"yes","Donald Trump","Strong Republican","2020-11-27",TRUE
+"7506674","2020-11-20 15:46:25","Tennessee","TN02",83,34,"Male",0.824,"yes","Not Asked","Weak Democrat","2020-11-20",FALSE
+"1493959","2021-04-03 19:50:49","Louisiana","LA01",76.1,42,"Female",2.1,"no","Donald Trump","Weak Democrat","2021-04-03",FALSE
+"1482176","2021-02-13 20:41:29","Idaho","ID01",72.1,38,"Female",2.4,"no","Joe Biden","Lean Democrat","2021-02-13",TRUE
+"1094553","2021-03-06 19:55:07","Vermont","VT00",44.4,44,"Male",2.2,"no","Joe Biden","Lean Democrat","2021-03-06",TRUE
+"1015843","2021-01-25 19:18:42","Nebraska","NE01",59.3,46,"Female",1.9,"yes","Joe Biden","Strong Democrat","2021-01-25",TRUE
+"1273428","2021-02-04 13:52:46","Wisconsin","WI04",96.3,33,"Female",2.4,"yes","Joe Biden","Lean Democrat","2021-02-04",TRUE
+"1631624","2021-04-03 15:25:30","Iowa","IA04",85.8,37,"Male",1.8,"yes","Joe Biden","Lean Democrat","2021-04-03",TRUE
+"1432826","2021-02-08 13:33:22","Tennessee","TN04",93.3,41,"Male",2.1,"no","Donald Trump","Lean Republican","2021-02-08",FALSE
+"1501948","2021-02-05 11:25:52","Mississippi","MS02",98.6,35,"Male",2.3,"yes","Joe Biden","Lean Democrat","2021-02-05",TRUE
+"1156254","2021-02-03 12:57:10","Colorado","CO01",76.9,36,"Female",2.2,"yes","Joe Biden","Lean Democrat","2021-02-03",TRUE
+"1225256","2021-03-24 14:20:01","South Dakota","SD00",85.4,40,"Male",2.2,"yes","Donald Trump","Strong Republican","2021-03-24",FALSE
+"1123928","2021-04-03 10:41:41","Utah","UT04",94.7,47,"Female",2.2,"no","Joe Biden","Lean Democrat","2021-04-03",TRUE
+"1382214","2021-03-20 18:45:17","Massachusetts","MA05",112.1,45,"Female",2.2,"yes","Joe Biden","Strong Democrat","2021-03-20",TRUE
+"1492493","2021-02-10 14:25:48","Arkansas","AR02",102.6,38,"Male",2.1,"no","Donald Trump","Strong Republican","2021-02-10",FALSE
+"1404152","2021-02-15 14:48:11","Iowa","IA01",127.3,30,"Female",2.2,"yes","Joe Biden","Lean Democrat","2021-02-15",TRUE
+"1291421","2021-04-06 13:27:52","Kentucky","KY05",73.6,36,"Female",2.3,"yes","Donald Trump","Lean Republican","2021-04-06",FALSE
+"1512494","2021-01-14 12:23:18","Oklahoma","OK03",91.7,48,"Male",2.0,"no","Donald Trump","Strong Republican","2021-01-14",FALSE
+"1204149","2021-03-17 19:17:46","Oregon","OR04",82.6,44,"Male",2.0,"no","Joe Biden","Lean Democrat","2021-03-17",TRUE
+"1412426","2021-03-18 17:16:24","Minnesota","MN04",78.5,40,"Male",1.8,"no","Donald Trump","Lean Republican","2021-03-18",FALSE
+"1121863","2021-03-12 12:43:33","Louisiana","LA04",74.6,43,"Female",2.1,"yes","Joe Biden","Lean Democrat","2021-03-12",TRUE
+"1203383","2021-03-25 16:05:48","New Jersey","NJ07",96.7,37,"Female",2.2,"no","Joe Biden","Lean Democrat","2021-03-25",TRUE
+"1051824","2021-01-08 18:56:09","South Carolina","SC04",67.8,41,"Male",1.9,"yes","Donald Trump","Weak Democrat","2021-01-08",FALSE
+"1216247","2021-02-05 15:25:45","Alaska","AK00",56.6,46,"Female",2.1,"no","Joe Biden","Lean Democrat","2021-02-05",TRUE
+"1363354","2021-02-07 21:01:16","Ohio","OH07",89.6,34,"Male",2.1,"yes","Donald Trump","Strong Republican","2021-02-07",FALSE
+"1018258","2021-02-26 22:38:35","Vermont","VT00",54.8,36,"Female",2.1,"yes","Joe Biden","Strong Democrat","2021-02-26",TRUE
+"1605315","2021-02-24 18:29:34","Washington","WA04",63.2,36,"Female",1.8,"no","Donald Trump","Strong Republican","2021-02-24",FALSE
+"1286243","2021-04-05 19:15:32","Colorado","CO03",75.4,35,"Male",2.3,"yes","Joe Biden","Lean Democrat","2021-04-05",TRUE
+"1221933","2021-03-11 14:41:41","Oklahoma","OK04",56.2,48,"Female",2.2,"yes","Donald Trump","Strong Republican","2021-03-11",FALSE
+"1442659","2021-01-05 12:56:05","North Carolina","NC07",85.9,35,"Male",1.8,"yes","Joe Biden","Lean Democrat","2021-01-05",TRUE

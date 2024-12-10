@@ -57,7 +57,7 @@ The output should use the following schema:
 "gender": string // feature column for the gender of the respondent
 "weight": float // feature column for a weighting factor associated with the response
 "extra_covid_worn_mask": string // feature column for whether an extra mask was worn (yes/no)
-"vote_2020": float // feature column for the voting behavior in the 2020 election
+"vote_2020": string // feature column for the voting behavior in the 2020 election "0" if they didn't vote
 "pid7": string // feature column for the seven-point political identification scale
 "date": string // feature column for the date of the response (ISO date format)
 "worn": boolean // label column indicating whether the respondent has recently worn a mask (TRUE/FALSE)
