@@ -74,13 +74,24 @@ Example data: {data}
 
 The output should use the following schema:
 
-"age": integer // feature column for the person's age
-"sex": string // feature column, male or female
-"bmi": float // feature column for body mass index
-"children": integer // feature column for number of children
-"smoker": string // feature column, yes or no for smoking status
-"region": string // feature column for region (northeast, southeast, southwest, northwest)
-"charges": float // label column for insurance charges
+"age": integer // feature column for the person's age, ranges between 18 and 64
+"sex": string // feature column, possible values: "male", "female"
+"bmi": float // feature column for body mass index, ranges between 15.96 and 53.13
+"children": integer // feature column for the number of children, ranges between 0 and 5
+"smoker": string // feature column, possible values: "yes", "no"
+"region": string // feature column for region, possible values: "northeast", "southeast", "southwest", "northwest"
+"charges": float // label column for insurance charges, ranges between 1121.87 and 63770.43
+
+Here are detailed summary stats that you should also use:
+
+,count,unique,top,freq,mean,std,min,25%,50%,75%,max
+age,1338.0,,,,39.20702541106129,14.049960379216154,18.0,27.0,39.0,51.0,64.0
+sex,1338,2,male,676,,,,,,,
+bmi,1338.0,,,,30.66339686098655,6.098186911679014,15.96,26.29625,30.4,34.69375,53.13
+children,1338.0,,,,1.0949177877429,1.205492739781914,0.0,0.0,1.0,2.0,5.0
+smoker,1338,2,no,1064,,,,,,,
+region,1338,4,southeast,364,,,,,,,
+charges,1338.0,,,,13270.422265141257,12110.011236694001,1121.8739,4740.28715,9382.033,16639.912515,63770.42801
 
 DO NOT COPY THE EXAMPLES but generate realistic but new and diverse samples which have the correct label conditioned on the features.
 """
