@@ -7,40 +7,31 @@
    - [1. Clone the Repository](#1-clone-the-repository)
    - [2. Create a Virtual Environment and Install Dependencies](#2-create-a-virtual-environment-and-install-dependencies)
    - [3. Set Up Environment Variables for API Access Keys](#3-set-up-environment-variables-for-api-access-keys)
-4. [Usage](#usage)
-   - [Running the Model Deployment Script](#running-the-model-deployment-script)
-   - [Running Evaluation Tests](#running-evaluation-tests)
-5. [Models Deployed](#models-deployed)
-6. [Real Tabular Datasets Used](#real-tabular-datasets-used)
-7. [References](#references)
-8. [In Progress](#in-progress)
+4. [Models Deployed](#models-deployed)
+5. [Real Tabular Datasets Used](#real-tabular-datasets-used)
+6. [References](#references)
+7. [In Progress](#in-progress)
 
 ## Project Overview
 
-- **Undergraduate Researcher:** Jessup Byun, UCLA
-- **Project Start Date:** September 2024
+- **Undergraduate Researcher:** Jessup Byun, UCLA  
+- **Project Start Date:** September 2024  
 - **Research Mentor:** Xiaofeng Lin, PhD Statistics, UCLA  
-- **Faculty Advisor:** Prof. Guang Cheng, UCLA Trustworthy AI Lab
+- **Faculty Advisor:** Prof. Guang Cheng, UCLA Trustworthy AI Lab  
+
 ---
 
-This repository contains the codebase for my independent research conducted at the **UCLA Trustworthy AI Lab** during **Fall '24**. My research focuses on synthetic tabular data generation and evaluation using advanced models like **LLaMA** and **TabSyn** deployed through frameworks like the **Groq API**. This work primarily assesses the tradeoff between utility and privacy in synthetic data generation.
+This repository contains the codebase for my independent research conducted at the **UCLA Trustworthy AI Lab** during **Fall '24**. My research focuses on synthetic tabular data generation and evaluation using advanced models like **LLaMA** and **Mixtral** deployed through frameworks like the **Groq API**. This work assesses the tradeoff between utility and privacy in synthetic data generation.
 
-⚠️ **Note**: Some code and evaluation components, particularly those involving lab-specific methods, may be omitted or simplified to maintain security and lab privacy standards. 
+⚠️ **Note**: Some code and evaluation components, particularly those involving lab-specific methods, may be omitted or simplified to maintain security and lab privacy.
 
 ## Repository Structure
 
-## Project Structure
-
-The repository is organized as follows:
-
-- **`evaluation/`**: Contains evaluation scripts for each dataset, such as `dataset_name_evaluation.py` and `dataset_name_alfred_analytica_evaluation.py`. Each test dataset can have its own subdirectories for evaluation results (e.g., `{dataset_name}_alfred_analytica_evaluation_results`) - currently private
-
-- **`model_deployment/`**: Contains deployment scripts for generating synthetic data for each test case, named as `dataset_name_model_deployment.py`
-
-- **`test_data/`**: Stores real and synthetic datasets for testing purposes
-  - **`real_data/`**: Directory for real datasets, with files like `dataset_name.csv`
-  - **`synthetic_data/`**: Directory for synthetic datasets, with files like `dataset_name_synthetic_data.csv`
-      - Can have two separate files denoting whether or not the data was generated with a high/low data regime context input. e.g. `dataset_name_synthetic_data_low_regime.csv`
+- **`evaluation/`**: Contains evaluation scripts for each dataset (t-sne plot generation). Each test dataset may have its own subdirectories for evaluation results
+- **`model_deployment/`**: Scripts for generating synthetic data for each test case, named as `dataset_name_model_deployment.py`.
+- **`test_data/`**: Stores real and synthetic datasets for testing purposes:
+  - **`real_data/`**: Directory for real datasets, with files like `dataset_name.csv`.
+  - **`synthetic_data/`**: Directory for synthetic datasets, with files like `dataset_name_synthetic_data.csv`.
 
 ## Installation and Setup
 
@@ -52,15 +43,15 @@ cd synthetic-data-gen-eval
 
 ### 2. Create a Virtual Environment and Install Dependencies
 
-#### Create a Virtual Environment with Python 3.10:
+#### Create a Virtual Environment with Python 3.10
 
-*Note: The repository uses a virtual environment with Python 3.10 due to incompabilities with evaluation libraries when using newer versions of Python*
+*Note: The repository uses Python 3.10 due to incompatibilities with evaluation libraries when using newer versions.*
 
 ```bash
 python3.10 -m venv .venv
 ```
 
-#### Activate the virtual environment:
+#### Activate the Virtual Environment
 
 - macOS/Linux:
 ```bash
@@ -71,65 +62,44 @@ source .venv/bin/activate
 .venv\Scripts\activate
 ```
 
-#### Install dependencies:
-
+#### Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 3. Set Up Environment Variables for API Access Keys
 
-- Create a .env file in the root of your directory
+- Create a `.env` file in the root directory.
 - Add your Groq API Key:
 ```bash
 GROQ_API_KEY="your_api_key_here"
 ```
 
-## Usage
-
-### Running the Model Deployment Script
-
-To deploy models for synthetic data generation, enter the `model_deployment/` folder and run:
-```bash
-model_deployment/dataset_name_model_deployment.py
-```
-
-### Running Evaluation Tests
-
-Evaluations for this project primarily assess the utility of generated synthetic data, but can also evaluate fidelity and privacy. Due to lab privacy requirements, some evaluation metrics and methods may not be included in this repository. To run evaluation scripts on fidelity, utility, and privacy:
-
-```bash
-evaluation/dataset_name/evaluation.py
-```
-
-Once available, it may also be possible to run another script that uses the proprietary "Alfred_Analytica" evaluation library developed by the UCLA Trustworthy AI Lab
-
 ## Models Deployed
+
 Specific models deployed via the Groq API include:
-- LLaMA 3.1 70B
-- LLaMA 3.1 8B
-- LLaMA 3.2 1B
+- **LLaMA 3.1**: 70B, 8B
+- **LLaMA 3.2**: 1B
+- **Mixtral**: 8x7B
 
 ## Real Tabular Datasets Used
-The following real tabular datasets are used as baselines for evaluation, most of which are sourced from Kaggle:
 
+The following real tabular datasets are used as baselines for evaluation:
 - **Insurance** (Kaggle): [Insurance Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance)
+- **combined_df_cty_week2.csv** (Private)
+- **labMergeDemo1Trimmed.csv** (Private)
 
 ## References
 
-[1] The prompt structure used for synthetic data generation is adapted from example B.5 of the research paper: *Curated LLM: Synergy of LLMs and Data Curation for Tabular Augmentation in Low-Data Regimes* by Seedatk, Huynh, et al. The reference is specifically applied in the data generation prompt structure within this codebase to emulate realistic and diverse synthetic samples. For further details, refer to the full paper [here](https://arxiv.org/pdf/2312.12112).
+[1] The prompt structure used for synthetic data generation is adapted from example B.5 of the research paper: *Curated LLM: Synergy of LLMs and Data Curation for Tabular Augmentation in Low-Data Regimes* by Seedatk, Huynh, et al. For further details, refer to the full paper [here](https://arxiv.org/pdf/2312.12112).
 
-[2] The list of real tabular datasets used in this research is adapted from Appendix A of the paper: *AutoDiff: Diffusion-based Generative Models for Tabular Data Synthesis*, as detailed by the authors. This list has been integrated to ensure comprehensive evaluation across diverse dataset types. For more information, please see the full paper [here](https://arxiv.org/pdf/2310.15479).
+[2] The list of real tabular datasets is adapted from Appendix A of the paper: *AutoDiff: Diffusion-based Generative Models for Tabular Data Synthesis*. For more information, see the full paper [here](https://arxiv.org/pdf/2310.15479).
 
-## In Progress:
+## In Progress
 
-#### This project is currently evolving to include advanced methods for synthetic data generation and evaluation. Planned tasks include:
-
-**Exploring Diffusion-Based Models:** Building on the initial phase with large language models (LLMs), I plan to experiment with latent diffusion models, which are known for their capability in generating high-dimensional data. These models may provide enhanced fidelity and diversity in synthetic datasets.
-
-**Refining Utility Evaluation Metrics:** The project will incorporate new metrics for evaluating the utility of synthetic data, focusing on the utility-privacy tradeoff. This includes a comprehensive evaluation using composite utility scores and privacy assessment protocols.
-
-**Broadening Model Testing Scope:** Besides Groq API-deployed LLMs like LLaMA, future iterations will explore additional experimental and state-of-the-art generative models, benchmarking their performance against current models.
-
-**Improving Reproducibility and Scalability:** Future updates aim to refine the codebase for easier deployment and reproducibility, especially around evaluation frameworks, to enable scalability across various synthetic data applications.
-
+**Enhancements Planned:**
+- Experimenting with latent diffusion models to improve synthetic data quality.
+- Experimenting with smarter and bigger LLMs.
+- Expanding datasets to include more diverse domains.
+- Refining evaluation metrics for fidelity, utility, diversity, privacy
+- Preparing a manuscript for publication to share findings with the broader research community.
