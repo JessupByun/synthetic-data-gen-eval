@@ -6,32 +6,44 @@ import numpy as np
 # Fill in your file names here:
 oracle_file = "data/real_data/private_labMergeDemo1Trimmed/private_labMergeDemo1Trimmed.csv"        
 train_file = "data/real_data/private_labMergeDemo1Trimmed/private_labMergeDemo1Trimmed_train.csv"           
-llama_file = "data/synthetic_data/private_combined_df_cty_week2/combined_df_cty_week2_synthetic_data_llama70B_n200_temp1.0.csv"    
-mixtral_file = "data/synthetic_data/private_combined_df_cty_week2/combined_df_cty_week2_synthetic_data_mixtral_n200_temp1.0_advanced_prompt.csv"
+llama_file = "data/synthetic_data/private_labMergeDemo1Trimmed/labMergeDemo1Trimmed_synthetic_data_llama70B_n250_temp1.0_advanced_prompt.csv"    
+mixtral_file = "data/synthetic_data/private_labMergeDemo1Trimmed/labMergeDemo1Trimmed_synthetic_data_mixtral_n250_temp1.0_advanced_prompt.csv"
 
 def load_and_encode_data(file_path):
-    """Load CSV and apply one-hot encoding for categorical features."""
     df = pd.read_csv(file_path)
-    # Convert categorical columns to dummy variables
+    # If there are date/time columns that can't be numeric, consider dropping them or converting to a numeric representation first.
+    # For example, if 'admittime' is a datetime column, you might need to parse and convert it to a numeric timestamp.
+    # For now, try dropping any obvious date/time columns if they are not needed for the t-SNE:
+    # df.drop(columns=["admittime_x", "dischtime", "charttime", ...], inplace=True, errors='ignore')
+    
     df = pd.get_dummies(df, drop_first=True)
+    # Convert all columns to numeric
+    df = df.apply(pd.to_numeric, errors='coerce')
+    # Fill NaNs
+    df = df.fillna(0)
     return df
 
-# Load and encode data
 df_oracle = load_and_encode_data(oracle_file)
 df_train = load_and_encode_data(train_file)
 df_llama = load_and_encode_data(llama_file)
 df_mixtral = load_and_encode_data(mixtral_file)
 
-# Suppose df_oracle is the "reference" set of columns
-all_columns = set(df_oracle.columns).union(df_train.columns).union(df_llama.columns)
+# Find union of columns
+all_columns = set(df_oracle.columns) | set(df_train.columns) | set(df_llama.columns) | set(df_mixtral.columns)
+all_columns = list(all_columns)
 
-# Reindex each dataframe to have the same columns, filling missing ones with 0
-df_oracle = df_oracle.reindex(columns=all_columns, fill_value=0)
-df_train = df_train.reindex(columns=all_columns, fill_value=0)
-df_llama = df_llama.reindex(columns=all_columns, fill_value=0)
-df_mixtral = df_mixtral.reindex(columns=all_columns, fill_value=0)
+# Reindex and ensure numeric
+def align_and_numeric(df):
+    df = df.reindex(columns=all_columns, fill_value=0)
+    df = df.apply(pd.to_numeric, errors='coerce')
+    df = df.fillna(0)
+    return df
 
-# Combine into a list of (name, dataframe)
+df_oracle = align_and_numeric(df_oracle)
+df_train = align_and_numeric(df_train)
+df_llama = align_and_numeric(df_llama)
+df_mixtral = align_and_numeric(df_mixtral)
+
 datasets = [
     ("Oracle", df_oracle),
     ("Train", df_train),
@@ -39,16 +51,19 @@ datasets = [
     ("Mixtral 8x7B", df_mixtral)
 ]
 
-# Determine the smallest dataset size
-min_size = min(len(df) for _, df in datasets)
+# Check for any object columns - print for debugging
+for name, df in datasets:
+    obj_cols = df.select_dtypes(include='object').columns
+    if len(obj_cols) > 0:
+        print(f"{name} has object columns: {obj_cols}")
+        # Consider dropping or converting these columns properly
 
-# Sample each dataset to the smallest size to ensure equal representation
+min_size = min(len(df) for _, df in datasets)
 sampled_datasets = []
 for name, df in datasets:
     df_sampled = df.sample(n=min_size, random_state=42)
     sampled_datasets.append((name, df_sampled))
 
-# Extract features and labels
 all_data = []
 all_labels = []
 for name, df in sampled_datasets:
@@ -56,14 +71,19 @@ for name, df in sampled_datasets:
     all_labels.extend([name] * len(df))
 
 X = np.vstack(all_data)
+
+# Convert X to float explicitly
+X = X.astype(float)
+
 labels = np.array(all_labels)
 
-# Run t-SNE on the combined data
-# Adjust parameters as needed: 
-tsne = TSNE(n_components=2, perplexity=20, random_state=42, max_iter=1000)
+# Optional: Double check for NaNs:
+# Instead of using np.isnan(X).any(), we can rely on the conversion step.
+# If conversion succeeded, we should be good.
+
+tsne = TSNE(n_components=2, perplexity=25, random_state=42, max_iter=1000)
 X_embedded = tsne.fit_transform(X)
 
-# Define custom colors
 color_map = {
     "Oracle": "cyan",
     "Train": "darkgrey",
@@ -71,13 +91,10 @@ color_map = {
     "Mixtral 8x7B": "green"
 }
 
-# Plot the results
 plt.figure(figsize=(8, 6))
 
 for name, _ in sampled_datasets:
     idx = (labels == name)
-    
-    # Set a larger size for Oracle and Train
     if name in ["Oracle", "Train"]:
         marker_size = 100
     else:
@@ -87,18 +104,15 @@ for name, _ in sampled_datasets:
         X_embedded[idx, 0], X_embedded[idx, 1],
         color=color_map[name],
         marker='o',
-        s=marker_size,  # Add this line or change the size
+        s=marker_size,
         label=name,
         alpha=0.5
     )
 
-plt.title("t-SNE Visualization: labMergeDemo1Trimmed.csv n = 250, temp = 1.0: Advanced Prompt")
+plt.title("t-SNE Visualization: labMergeDemo1Trimmed.csv n=250, temp=1.0, Advanced Prompt")
 plt.xlabel("t-SNE 1")
 plt.ylabel("t-SNE 2")
 plt.legend()
-
-# Set aspect to equal for a cleaner look
 plt.gca().set_aspect('equal', 'box')
-
 plt.tight_layout()
 plt.show()

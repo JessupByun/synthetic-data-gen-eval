@@ -1,0 +1,94 @@
+Column,Metric,Score
+subject_id_x,KSComplement,0.71641085784243
+admittime_y,TVComplement,2.1753286949532935e-09
+dischtime,TVComplement,2.1753286949532935e-09
+Age,KSComplement,0.8135578271195253
+gender,TVComplement,0.9477231606457164
+ethnicity,TVComplement,0.5663482081048485
+insurance,TVComplement,0.7237184727347826
+label,KSComplement,0.9452962133247289
+dod,TVComplement,0.484590101576966
+charttime,TVComplement,2.175325475306522e-09
+admittime_x,TVComplement,2.1753286949532935e-09
+lab_time_from_admit,TVComplement,0.002080060492056557
+valuenum,KSComplement,0.6938207765466486
+All,Average Shape,0.4533496682376166
+subject_id_x and admittime_y,ContingencySimilarity,0.0
+subject_id_x and dischtime,ContingencySimilarity,0.0
+subject_id_x and Age,CorrelationSimilarity,0.9303288241445027
+subject_id_x and gender,ContingencySimilarity,0.5029427605517446
+subject_id_x and ethnicity,ContingencySimilarity,0.39253763535823494
+subject_id_x and insurance,ContingencySimilarity,0.43719056856282645
+subject_id_x and label,CorrelationSimilarity,0.9003960622213939
+subject_id_x and dod,ContingencySimilarity,0.3389146167712259
+subject_id_x and charttime,ContingencySimilarity,0.0
+subject_id_x and admittime_x,ContingencySimilarity,0.0
+subject_id_x and lab_time_from_admit,ContingencySimilarity,0.0005557408024897681
+subject_id_x and valuenum,CorrelationSimilarity,0.9953057442663038
+admittime_y and dischtime,ContingencySimilarity,0.0
+admittime_y and Age,ContingencySimilarity,0.0
+admittime_y and gender,ContingencySimilarity,0.0
+admittime_y and ethnicity,ContingencySimilarity,0.0
+admittime_y and insurance,ContingencySimilarity,0.0
+admittime_y and label,ContingencySimilarity,0.0
+admittime_y and dod,ContingencySimilarity,0.0
+admittime_y and charttime,ContingencySimilarity,0.0
+admittime_y and admittime_x,ContingencySimilarity,0.0
+admittime_y and lab_time_from_admit,ContingencySimilarity,0.0
+admittime_y and valuenum,ContingencySimilarity,1.1102230246251565e-16
+dischtime and Age,ContingencySimilarity,0.0
+dischtime and gender,ContingencySimilarity,0.0
+dischtime and ethnicity,ContingencySimilarity,0.0
+dischtime and insurance,ContingencySimilarity,0.0
+dischtime and label,ContingencySimilarity,0.0
+dischtime and dod,ContingencySimilarity,0.0
+dischtime and charttime,ContingencySimilarity,1.1102230246251565e-16
+dischtime and admittime_x,ContingencySimilarity,0.0
+dischtime and lab_time_from_admit,ContingencySimilarity,1.1102230246251565e-16
+dischtime and valuenum,ContingencySimilarity,1.1102230246251565e-16
+Age and gender,ContingencySimilarity,0.677918824291216
+Age and ethnicity,ContingencySimilarity,0.39571816488939704
+Age and insurance,ContingencySimilarity,0.5718897377795842
+Age and label,CorrelationSimilarity,0.8878799589841226
+Age and dod,ContingencySimilarity,0.43660144854216854
+Age and charttime,ContingencySimilarity,2.220446049250313e-16
+Age and admittime_x,ContingencySimilarity,2.220446049250313e-16
+Age and lab_time_from_admit,ContingencySimilarity,0.0004445926419918145
+Age and valuenum,CorrelationSimilarity,0.9678583298797987
+gender and ethnicity,ContingencySimilarity,0.5345152126366304
+gender and insurance,ContingencySimilarity,0.6695509556365852
+gender and label,ContingencySimilarity,0.9172026175333847
+gender and dod,ContingencySimilarity,0.4845901014623921
+gender and charttime,ContingencySimilarity,0.0
+gender and admittime_x,ContingencySimilarity,1.1102230246251565e-16
+gender and lab_time_from_admit,ContingencySimilarity,0.0016195874815415623
+gender and valuenum,ContingencySimilarity,0.022151863157259144
+ethnicity and insurance,ContingencySimilarity,0.4492853196459995
+ethnicity and label,ContingencySimilarity,0.5663482080633297
+ethnicity and dod,ContingencySimilarity,0.39633846202702483
+ethnicity and charttime,ContingencySimilarity,1.1102230246251565e-16
+ethnicity and admittime_x,ContingencySimilarity,0.0
+ethnicity and lab_time_from_admit,ContingencySimilarity,0.0009368202099113709
+ethnicity and valuenum,ContingencySimilarity,0.014852593084266341
+insurance and label,ContingencySimilarity,0.6628564520927669
+insurance and dod,ContingencySimilarity,0.4662162326614955
+insurance and charttime,ContingencySimilarity,0.0
+insurance and admittime_x,ContingencySimilarity,1.1102230246251565e-16
+insurance and lab_time_from_admit,ContingencySimilarity,0.0009050635926262096
+insurance and valuenum,ContingencySimilarity,0.022151863157259033
+label and dod,ContingencySimilarity,0.4845901014623921
+label and charttime,ContingencySimilarity,1.1102230246251565e-16
+label and admittime_x,ContingencySimilarity,0.0
+label and lab_time_from_admit,ContingencySimilarity,0.0020800584321758464
+label and valuenum,CorrelationSimilarity,0.9924091518074833
+dod and charttime,ContingencySimilarity,1.1102230246251565e-16
+dod and admittime_x,ContingencySimilarity,0.0
+dod and lab_time_from_admit,ContingencySimilarity,0.0010479683704092135
+dod and valuenum,ContingencySimilarity,0.014741444923768166
+charttime and admittime_x,ContingencySimilarity,0.0
+charttime and lab_time_from_admit,ContingencySimilarity,0.0
+charttime and valuenum,ContingencySimilarity,0.0
+admittime_x and lab_time_from_admit,ContingencySimilarity,0.0
+admittime_x and valuenum,ContingencySimilarity,1.1102230246251565e-16
+lab_time_from_admit and valuenum,ContingencySimilarity,0.0003652010987790222
+All Pairs,Average Corr Similarity,0.19411843959262157
